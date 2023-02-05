@@ -57,6 +57,14 @@ h1, h3{
 .hamburger:hover {
   background-color: #2642af;
 }
+#bdyDesignSystems{
+background-color: #ECD1A0;
+}
+#typography h3{  
+  margin-top: 0px;
+  padding-top: 1%;
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   .navigation-menu ul {
     position: absolute;
