@@ -60,7 +60,7 @@ h1, h3{
 #bdyDesignSystems{
 background-color: #ECD1A0;
 }
-#typography h3{  
+#typography h3 ,#formsList h3{
   margin-top: 0px;
   padding-top: 1%;
   text-align: center;

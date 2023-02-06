@@ -8,6 +8,16 @@ export default App;
 function DisplayCode({htmlContent}) {
   return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
 }
+function FormsList()
+{
+  return(
+    <div id="formsList">
+    <h3>Forms & List</h3>
+    <div id="forms"></div>  
+      <h4> Form Elements</h4>
+    </div>
+  )
+}
 
 function Typography()
 {
@@ -117,31 +127,135 @@ function Typography()
           <span style={{flex: 1}}>
           <pre>
             <code>
-              color: '#000000'
+              color: #000000;
             </code>
           </pre>
           </span><br/>
     </div>
-    <span> body text : #ECD1A0 </span> <br/>  
-    <span> titles or display text : #color</span> <br/>
-    <span>background : #color</span> <br/>
-    <span>alternate background : #color</span> <br/>
-    <span>primary for buttons: #color</span> <br/>
-    <span>secondary colous for buttons: #color</span> <br/>
-    <span>success button or message: #color</span> <br/>
-    <span> danger button or message: #color</span> <br/>
-    <span> info button or message: #color</span> <br/>
-    <span> warning button or message: #color</span> <br/> 
+    <div style={{display: 'flex',flexDirection: 'row'}}>
+          <span style={{flex: 0.5}}> Header text - #ff0038</span>
+          <span style={{flex: 0.5}}><h5 class="fontStyle" style={{color: '#ff0038'}} > This is title text color.</h5></span>
+          <span style={{flex: 1}}>
+          <pre>
+            <code>
+              color: #ff0038;
+            </code>
+          </pre>
+          </span><br/>
+    </div>
+    <div style={{display: 'flex',flexDirection: 'row'}}>
+          <span style={{flex: 0.5}}> background color - #ECD1A0</span>
+          <span style={{flex: 0.5}}><h5 class="fontStyle"> '#ECD1A0' is your  background color.</h5></span>
+          <span style={{flex: 1}}>
+          <pre>
+            <code>
+              color: #ECD1A0;
+            </code>
+          </pre>
+          </span><br/>
+    </div>
+    <div style={{display: 'flex',flexDirection: 'row'}}>
+          <span style={{flex: 0.5}}> primary button color - #ff0038</span>
+          <span style={{flex: 0.5}}><h5 class="fontStyle" style={{color: '#ff0038'}} > This is primary button color.</h5></span>
+          <span style={{flex: 1}}>
+          <pre>
+            <code>
+              color: #ff0038;
+            </code>
+          </pre>
+          </span><br/>
+    </div>
+    <div style={{display: 'flex',flexDirection: 'row'}}>
+          <span style={{flex: 0.5}}> secondary button color - #958689</span>
+          <span style={{flex: 0.5}}><h5 class="fontStyle" style={{color: '#958689'}} > This is secondary button color.</h5></span>
+          <span style={{flex: 1}}>
+          <pre>
+            <code>
+              color: #958689;
+            </code>
+          </pre>
+          </span><br/>
+    </div>
+    <div style={{display: 'flex',flexDirection: 'row'}}>
+          <span style={{flex: 0.5}}> success button or message - #418433</span>
+          <span style={{flex: 0.5}}><h5 class="fontStyle" style={{color: '#418433'}} > This is success button or message color.</h5></span>
+          <span style={{flex: 1}}>
+          <pre>
+            <code>
+              color: #418433;
+            </code>
+          </pre>
+          </span><br/>
+    </div>
+    <div style={{display: 'flex',flexDirection: 'row'}}>
+          <span style={{flex: 0.5}}> success button or message - #418433</span>
+          <span style={{flex: 0.5}}><h5 class="fontStyle" style={{color: '#418433'}} > This is success button or message color.</h5></span>
+          <span style={{flex: 1}}>
+          <pre>
+            <code>
+              color: #418433;
+            </code>
+          </pre>
+          </span><br/>
+    </div>
+    <div style={{display: 'flex',flexDirection: 'row'}}>
+          <span style={{flex: 0.5}}> danger button or message - #bc3907</span>
+          <span style={{flex: 0.5}}><h5 class="fontStyle" style={{color: '#bc3907'}} > This is danger button or message color.</h5></span>
+          <span style={{flex: 1}}>
+          <pre>
+            <code>
+              color: #bc3907;
+            </code>
+          </pre>
+          </span><br/>
+    </div>
     <h4>Spacing</h4> 
-    <span> body margin : #value </span> <br/>
-    <span> body padding : #value </span><br/>
-    <span> div margin : #value </span> <br/>
-    <span> div padding : #value </span><br/>
-    <h4>Images </h4> 
-    <span> image width : #value </span><br/>
-    <span> image height : #value </span><br/>
-    <span> image border style : #value </span><br/>
-    <span> image styles: #value </span><br/>
+    <div style={{display: 'flex',flexDirection: 'row'}}>
+          <span style={{flex: 0.5}}> body margin - auto</span>
+          <span style={{flex: 0.5}}><h5 class="fontStyle" style={{margin : 'auto'}} > Your margin auto style.</h5></span>
+          <span style={{flex: 1}}>
+          <pre>
+            <code>
+              margin : auto;
+            </code>
+          </pre>
+          </span><br/>
+    </div>
+    <div style={{display: 'flex',flexDirection: 'row'}}>
+          <span style={{flex: 0.5}}> body padding - 1px</span>
+          <span style={{flex: 0.5}}><h5 class="fontStyle" style={{padding : '22px'}} > Your padding style.</h5></span>
+          <span style={{flex: 1}}>
+          <pre>
+            <code>
+              padding : 3px;
+            </code>
+          </pre>
+          </span><br/>
+    </div>
+    <div style={{display: 'flex',flexDirection: 'row'}}>
+          <span style={{flex: 0.5}}> div padding- 1px</span>
+          <span style={{flex: 0.5}}><h5 class="fontStyle" style={{padding : '22px'}} > Your padding style.</h5></span>
+          <span style={{flex: 1}}>
+          <pre>
+            <code>
+              padding : 3px;
+            </code>
+          </pre>
+          </span><br/>
+    </div>   
+    <h4>Images </h4>
+    <div style={{display: 'flex',flexDirection: 'row'}}>
+          <span style={{flex: 0.5}}> Image width and height-50% * 50% </span>
+          <span style={{flex: 0.5}}><h5 class="fontStyle" style={{width : '50%', height:'50%'}} > <img src="src/images/tagmahal.jpg" alt="Taj-mahal" /></h5></span>
+          <span style={{flex: 1}}>
+          <pre>
+            <code>
+              width : 50%;
+              height: 50%;
+            </code>
+          </pre>
+          </span><br/>
+    </div>    
   </div>
 
 </div>
@@ -171,6 +285,7 @@ function App() {
       </nav>
       <div id="bdyDesignSystems">
        < Typography/>
+       < FormsList/>
       </div>
       </div>
   )
