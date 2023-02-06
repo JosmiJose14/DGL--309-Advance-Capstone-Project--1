@@ -1,24 +1,75 @@
-
- import './App.css';
+import './App.css';
 import React from 'react';
-
 
 export default App;
 
 function DisplayCode({htmlContent}) {
   return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
 }
-function FormsList()
+function Forms()
 {
   return(
-    <div id="formsList">
-    <h3>Forms & List</h3>
+    <div id="forms">
+    <h3>Forms</h3>
     <div id="forms"></div>  
       <h4> Form Elements</h4>
+      <div style={{display: 'flex',flexDirection: 'row'}}>          
+          <span style={{flex: 0.5}}>Label and Textbox</span>
+          <span style={{flex: 0.5}}>
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname" placeholder='Josmi Jose'/>
+          </span>
+          <span style={{flex: 1}}>
+              
+                <pre>
+                  <code>
+                      &lt;label for="fname"&gt;First name:&lt;/label&gt; <br/>
+                      &lt;input type="text" id="fname" name="fname" placeholder='Josmi Jose'/&gt;
+                  </code>
+                </pre>              
+          </span><br/>
+    </div>
+    <div style={{display: 'flex',flexDirection: 'row'}}>          
+          <span style={{flex: 0.5}}>Dropdown list</span>
+          <span style={{flex: 0.5}}>
+          <label for="cars">Choose a car:</label>
+          <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+          </span>
+          <span style={{flex: 1}}>              
+                <pre>
+                  <code>
+                     
+                      &lt;select name="cars" id="cars"&gt;<br/>
+                        &lt;option value="volvo"&gt;Volvo&lt;/option&gt;<br/>
+                        &lt;option value="saab"&gt;Saab&lt;/option&gt;<br/>
+                        &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;<br/>
+                        &lt;option value="audi"&gt;Audi&lt;/option&gt;<br/>
+                      &lt;/select&gt;<br/>
+                  </code>
+                </pre>              
+          </span><br/>
+    </div>
+    <div style={{display: 'flex',flexDirection: 'row'}}>          
+          <span style={{flex: 0.5}}>Submit button</span>
+          <span style={{flex: 0.5}}>
+          <input type="submit" value="Submit"/>
+          </span>
+          <span style={{flex: 1}}>              
+                <pre>
+                  <code>
+                      &lt;input type="submit" value="Submit"/&gt;
+                  </code>
+                </pre>              
+          </span><br/>
+    </div>
     </div>
   )
 }
-
 function Typography()
 {
   return(<div id="typography">
@@ -48,8 +99,7 @@ function Typography()
           </span>
     </div>
     <h4>Headers</h4>
-    <div style={{display: 'flex',flexDirection: 'row'}}>
-          
+    <div style={{display: 'flex',flexDirection: 'row'}}>          
           <span style={{flex: 0.5}}> H1 - Logo </span>
           <span style={{flex: 0.5}}>
             <h1 class="fontStyle">This is h1 tag.</h1></span>
@@ -59,8 +109,7 @@ function Typography()
                   <code>
                       &lt;h1&gt;This is h1 tag&lt;/h1&gt;
                   </code>
-                </pre>
-              
+                </pre>              
           </span><br/>
     </div>
     <div style={{display: 'flex',flexDirection: 'row'}}>
@@ -188,17 +237,6 @@ function Typography()
           </span><br/>
     </div>
     <div style={{display: 'flex',flexDirection: 'row'}}>
-          <span style={{flex: 0.5}}> success button or message - #418433</span>
-          <span style={{flex: 0.5}}><h5 class="fontStyle" style={{color: '#418433'}} > This is success button or message color.</h5></span>
-          <span style={{flex: 1}}>
-          <pre>
-            <code>
-              color: #418433;
-            </code>
-          </pre>
-          </span><br/>
-    </div>
-    <div style={{display: 'flex',flexDirection: 'row'}}>
           <span style={{flex: 0.5}}> danger button or message - #bc3907</span>
           <span style={{flex: 0.5}}><h5 class="fontStyle" style={{color: '#bc3907'}} > This is danger button or message color.</h5></span>
           <span style={{flex: 1}}>
@@ -275,7 +313,13 @@ function App() {
               <a href="/home">Typography & Color</a>
             </li>
             <li>
-              <a href="/about">Forms & List</a>
+              <a href="">Navigations</a>
+            </li>
+            <li>
+              <a href="/about">Forms</a>
+            </li>
+            <li>
+              <a href="">Lists</a>
             </li>
             <li>
               <a href="/contact">Components</a>
@@ -285,7 +329,7 @@ function App() {
       </nav>
       <div id="bdyDesignSystems">
        < Typography/>
-       < FormsList/>
+       < Forms/>
       </div>
       </div>
   )

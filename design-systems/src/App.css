@@ -31,7 +31,7 @@ h1, h3{
 .navigation-menu li {
   
   list-style-type: none;
-  margin: -10px 12rem;
+  margin: -10px 7rem;
 }
 .navigation-menu li a {
   text-decoration: none;
@@ -60,7 +60,7 @@ h1, h3{
 #bdyDesignSystems{
 background-color: #ECD1A0;
 }
-#typography h3 ,#formsList h3{
+#typography h3 ,#forms h3{
   margin-top: 0px;
   padding-top: 1%;
   text-align: center;
@@ -80,11 +80,25 @@ background-color: #ECD1A0;
   padding-left: 6%;
   display: inline;
 }
+pre
+{background-color: black;}
 code
 {
     display: inline;
     background-color: black;
     color: white;
+}
+#typography,#forms {
+  text-align: center;
+}
+input[type=submit] {
+  background-color: #ff0038;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .navigation-menu ul {
