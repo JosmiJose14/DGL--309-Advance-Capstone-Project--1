@@ -3,7 +3,8 @@ h3 {
   margin: 0;
 }
 
-#divHeading {
+#divHeading,
+#divfooter {
   background-color: black;
   color: #ff0038;
   text-align: center;
@@ -69,9 +70,9 @@ h3 {
 }
 
 #typography h3,
-#forms h3, 
+#forms h3,
 #lists h3,
-#components h3{
+#components h3 {
   margin-top: 0px;
   padding-top: 1%;
   text-align: center;
@@ -105,8 +106,7 @@ code {
 #typography,
 #forms,
 #lists,
-#components
- {
+#components {
   text-align: center;
 }
 
@@ -119,21 +119,89 @@ input[type=submit] {
   margin: 4px 2px;
   cursor: pointer;
 }
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   background-color: #ffffff;
 }
+
+.elementRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-1 {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0rem;
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+}
+
+
+.navigation-1 .navigation-menu {
+  margin-left: auto;
+}
+
+.navigation-1 .navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+
+.navigation-1 .navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.navigation-1 .navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.navigation-1 .hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #283b8b;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.navigation-1 .hamburger:hover {
+  background-color: #2642af;
+}
+
 @media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  navigation-menu ul {
+    display: none;
+  }
+
   .navigation-menu ul {
     position: absolute;
-    top: 60px;
+    top: 30px;
     left: 0;
     flex-direction: column;
     width: 100%;
     height: calc(100vh - 77px);
-    background-color: white;
+    background-color: black;
     border-top: 1px solid black;
   }
 
@@ -150,5 +218,18 @@ input[type=submit] {
 
   .navigation-menu li:hover {
     background-color: #eee;
+  }
+
+  .navigation-menu ul {
+    display: none;
+  }
+
+  .navigation-menu.expanded ul {
+    display: block;
+    height: auto;
+  }
+
+  .elementRow {
+    flex-direction: column
   }
 }
