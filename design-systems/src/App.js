@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import tajMahalImage from './images/tajmahal.jpg';
 import tagmahalmoonImage from './images/tajmahalmoon.jpeg';
 import tajMahalfullImage from './images/tajmahalfull.jpg';
+import menuicon from './images/hamburger-menu.png';
 import {
   Accordion,
   AccordionItem,
@@ -14,7 +15,6 @@ import "react-accessible-accordion/dist/fancy-example.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader  
 import { Carousel } from 'react-responsive-carousel';
 export default App;
-
 
 function App() {
   const [menuItem, setMenuItem] = useState(1);
@@ -39,7 +39,8 @@ function App() {
             onClick={() => {
               setIsNavExpanded(!isNavExpanded);
             }}
-          ></button>
+           
+          > <img src={menuicon} style={{ width: "100%", height: "100%" }} /></button>
           <div
             className={
               isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
@@ -432,15 +433,15 @@ function App() {
         <h3>Lists</h3>
         <h4> Ul Lists</h4>
         <div class="elementRow">
-          <span style={{ flex: 0.3 }}>Ul list</span>
-          <span style={{  }}>
+          <span style={{ flex: 0.2 }}>Ul list</span>
+          <span style={{  }} class="listSTyle">
             <ul>
               <li>Coffee</li>
               <li>Tea</li>
               <li>Milk</li>
             </ul>
           </span>
-          <span style={{  }}>
+          <span style={{ flex: 0.3 }}>
             <pre>
               <code>
                 &lt;ul&gt;
@@ -460,15 +461,15 @@ function App() {
         </div>
         <h4> Ol Lists</h4>
         <div class="elementRow">
-          <span style={{ flex: 0.3 }}>Ul list</span>
-          <span style={{ }}>
+          <span style={{ flex: 0.2}}>Ul list</span>
+          <span class="listSTyle">
             <ol>
               <li>Coffee</li>
               <li>Tea</li>
               <li>Milk</li>
             </ol>
           </span>
-          <span style={{ flex: 0.1 }}>
+          <span style={{ flex: 0.3 }}>
             <pre>
               <code>
                 &lt;ol&gt;
@@ -496,7 +497,7 @@ function App() {
         <h4>Accordian</h4>
         <div class="elementRow">
           <span style={{ flex: 0.5 }}> Accordian</span>
-          <span class="examplefont" style={{  }}>
+          <span  style={{ }}>
             <Accordion>
               <AccordionItem>
                 <AccordionItemHeading>
@@ -712,8 +713,8 @@ function App() {
       <div id ="navigationSection" style={{ height: 'calc(100vh - 60px)'}}>
       <h3>Navigation</h3>
       <div class="elementRow">
-      <span style={{ flex: 0.5 }}> Navigation </span>
-      <span style={{ flex: 0.5 }}>
+      <span style={{ flex: 0.3 }}> Navigation </span>
+      <span style={{ flex: 0.3 }}>
         <nav className="navigation-1">
         <button
           className="hamburger"
@@ -739,7 +740,7 @@ function App() {
       </div>
       </nav>
       </span>
-      <span style={{ flex: 1 }}>
+      <span style={{ }}>
         <pre>
           <code>
           &lt;nav className="navigation"&gt;<br/>
@@ -796,3 +797,8 @@ function App() {
     </div>
   );
 }
+//Sites refered for implementing react.js
+// https://devdotcode.com/5-steps-to-set-up-react-development-environment/
+// https://www.npmjs.com/package/react-accessible-accordion
+// https://blog.logrocket.com/create-responsive-navbar-react-css/
+// https://www.javatpoint.com/carousel-in-react
