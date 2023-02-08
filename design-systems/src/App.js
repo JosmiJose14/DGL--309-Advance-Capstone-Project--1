@@ -1,5 +1,7 @@
 import "./App.css";
+
 import React, { useState } from "react";
+import tajMahalImage from './images/tagmahal.jpg'
 import {
   Accordion,
   AccordionItem,
@@ -79,7 +81,7 @@ function App() {
                   }}
                   onClick={() => setMenuItem(2)}
                 >
-                  Forms
+                  Forms & Lists
                 </button>
               </li>
               {/* <li>
@@ -229,7 +231,6 @@ function App() {
             <span style={{ flex: 0.5 }}> Header text - #ff0038</span>
             <span style={{ flex: 0.5 }}>
               <h5 class="fontStyle" style={{ color: "#ff0038" }}>
-                {" "}
                 This is title text color.
               </h5>
             </span>
@@ -256,7 +257,6 @@ function App() {
             <span style={{ flex: 0.5 }}> primary button color - #ff0038</span>
             <span style={{ flex: 0.5 }}>
               <h5 class="fontStyle" style={{ color: "#ff0038" }}>
-                {" "}
                 This is primary button color.
               </h5>
             </span>
@@ -271,7 +271,6 @@ function App() {
             <span style={{ flex: 0.5 }}> secondary button color - #958689</span>
             <span style={{ flex: 0.5 }}>
               <h5 class="fontStyle" style={{ color: "#958689" }}>
-                {" "}
                 This is secondary button color.
               </h5>
             </span>
@@ -284,12 +283,10 @@ function App() {
           </div>
           <div class="elementRow">
             <span style={{ flex: 0.5 }}>
-              {" "}
               success button or message - #418433
             </span>
             <span style={{ flex: 0.5 }}>
               <h5 class="fontStyle" style={{ color: "#418433" }}>
-                {" "}
                 This is success button or message color.
               </h5>
             </span>
@@ -302,12 +299,10 @@ function App() {
           </div>
           <div class="elementRow">
             <span style={{ flex: 0.5 }}>
-              {" "}
               danger button or message - #bc3907
             </span>
             <span style={{ flex: 0.5 }}>
               <h5 class="fontStyle" style={{ color: "#bc3907" }}>
-                {" "}
                 This is danger button or message color.
               </h5>
             </span>
@@ -323,7 +318,6 @@ function App() {
             <span style={{ flex: 0.5 }}> body margin - auto</span>
             <span style={{ flex: 0.5 }}>
               <h5 class="fontStyle" style={{ margin: "auto" }}>
-                {" "}
                 Your margin auto style.
               </h5>
             </span>
@@ -338,7 +332,6 @@ function App() {
             <span style={{ flex: 0.5 }}> body padding - 1px</span>
             <span style={{ flex: 0.5 }}>
               <h5 class="fontStyle" style={{ padding: "22px" }}>
-                {" "}
                 Your padding style.
               </h5>
             </span>
@@ -353,7 +346,6 @@ function App() {
             <span style={{ flex: 0.5 }}> div padding- 1px</span>
             <span style={{ flex: 0.5 }}>
               <h5 class="fontStyle" style={{ padding: "22px" }}>
-                {" "}
                 Your padding style.
               </h5>
             </span>
@@ -367,13 +359,11 @@ function App() {
           <h4>Images </h4>
           <div class="elementRow">
             <span style={{ flex: 0.5 }}>
-              {" "}
               Image width and height-50% * 50%{" "}
             </span>
             <span style={{ flex: 0.5 }}>
-              <h5 class="fontStyle" style={{ width: "50%", height: "50%" }}>
-                {" "}
-                <img src="src/images/tagmahal.jpg" alt="Taj-mahal" />
+              <h5 class="fontStyle" >
+                <img src={tajMahalImage} style={{ width: "50%", height: "50%" }} alt="Taj-mahal" />
               </h5>
             </span>
             <span style={{ flex: 1 }}>
