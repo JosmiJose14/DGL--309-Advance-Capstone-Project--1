@@ -1,7 +1,8 @@
 import "./App.css";
-
 import React, { useState } from "react";
-import tajMahalImage from './images/tagmahal.jpg'
+import tajMahalImage from './images/tajmahal.jpg';
+import tagmahalmoonImage from './images/tajmahalmoon.jpeg';
+import tajMahalfullImage from './images/tajmahalfull.jpg';
 import {
   Accordion,
   AccordionItem,
@@ -10,8 +11,10 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
-// import Navbar from "./NavElement";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader  
+import { Carousel } from 'react-responsive-carousel';
 export default App;
+
 
 function App() {
   const [menuItem, setMenuItem] = useState(1);
@@ -19,7 +22,9 @@ function App() {
   function CopyrightFooter() {
     return (
       <div id="divfooter">
-        <h4>Copyright @ 2023 DGL 309</h4>
+        <h4 style={
+          {marginBottom:'0'}
+        }>Copyright @ 2023 DGL 309</h4>
       </div>
     );
   }
@@ -42,61 +47,32 @@ function App() {
           >
             <ul>
               <li>
-                {/* <a href="javascript:void(0)" onClick={setMenuItem(1)}>Typography & Color</a> */}
                 <button
-                  style={{
-                    cursor: "pointer",
-                    color: "#ECD1A0",
-                    backgroundColor: "black",
-                    width: 110,
-                    fontWeight: "900",
-                  }}
+                 class="navButton"
                   onClick={() => setMenuItem(1)}
                 >
                   Typography & Color
                 </button>
               </li>
               <li>
-                {/* <a href="">Navigations</a> */}
                 <button
-                  style={{
-                    cursor: "pointer",
-                    color: "#ECD1A0",
-                    backgroundColor: "black",
-                    fontWeight: "900",
-                  }}
+                 class="navButton"
                   onClick={() => setMenuItem(0)}
                 >
                   Navigations
                 </button>
               </li>
               <li>
-                {/* <a href="javascript:void(0)" onClick={setMenuItem(2)}>Forms</a> */}
                 <button
-                  style={{
-                    cursor: "pointer",
-                    color: "#ECD1A0",
-                    backgroundColor: "black",
-                    fontWeight: "900",
-                  }}
+                   class="navButton"
                   onClick={() => setMenuItem(2)}
                 >
                   Forms & Lists
                 </button>
               </li>
-              {/* <li>
-            {/* <a href="">Lists</a> */}
-              {/* <button style={{cursor: 'pointer', color: '#ECD1A0', backgroundColor: 'black', fontWeight: '900' }} onClick={() => setMenuItem(3)}>Lists</button>
-          </li> */}
               <li>
-                {/* <a href="/contact">Components</a> */}
                 <button
-                  style={{
-                    cursor: "pointer",
-                    color: "#ECD1A0",
-                    backgroundColor: "black",
-                    fontWeight: "900",
-                  }}
+                  class="navButton"
                   onClick={() => setMenuItem(4)}
                 >
                   Components
@@ -456,15 +432,15 @@ function App() {
         <h3>Lists</h3>
         <h4> Ul Lists</h4>
         <div class="elementRow">
-          <span style={{ flex: 0.5 }}>Ul list</span>
-          <span style={{ flex: 0.5 }}>
+          <span style={{ flex: 0.3 }}>Ul list</span>
+          <span style={{  }}>
             <ul>
               <li>Coffee</li>
               <li>Tea</li>
               <li>Milk</li>
             </ul>
           </span>
-          <span style={{ flex: 1 }}>
+          <span style={{  }}>
             <pre>
               <code>
                 &lt;ul&gt;
@@ -484,15 +460,15 @@ function App() {
         </div>
         <h4> Ol Lists</h4>
         <div class="elementRow">
-          <span style={{ flex: 0.5 }}>Ul list</span>
-          <span style={{ flex: 0.5 }}>
+          <span style={{ flex: 0.3 }}>Ul list</span>
+          <span style={{ }}>
             <ol>
               <li>Coffee</li>
               <li>Tea</li>
               <li>Milk</li>
             </ol>
           </span>
-          <span style={{ flex: 1 }}>
+          <span style={{ flex: 0.1 }}>
             <pre>
               <code>
                 &lt;ol&gt;
@@ -520,7 +496,7 @@ function App() {
         <h4>Accordian</h4>
         <div class="elementRow">
           <span style={{ flex: 0.5 }}> Accordian</span>
-          <span class="examplefont" style={{ flex: 0.5 }}>
+          <span class="examplefont" style={{  }}>
             <Accordion>
               <AccordionItem>
                 <AccordionItemHeading>
@@ -553,7 +529,7 @@ function App() {
               </AccordionItem>
             </Accordion>
           </span>
-          <span style={{ flex: 1 }}>
+          <span style={{  }}>
             <pre>
               <code>
                 &lt;Accordion&gt;
@@ -575,12 +551,7 @@ function App() {
                 &lt;p&gt;
                 <br />
                 Exercitation in fugiat est ut ad ea cupidatat ut in
-                <br />
-                cupidatat occaecat ut occaecat consequat est minim minim
-                <br />
-                esse tempor laborum consequat esse adipisicing eu
-                <br />
-                reprehenderit enim.
+
                 <br />
                 &lt;/p&gt;
                 <br />
@@ -605,10 +576,7 @@ function App() {
                 &lt;p&gt;
                 <br />
                 In ad velit in ex nostrud dolore cupidatat consectetur
-                <br />
-                ea in ut nostrud velit in irure cillum tempor laboris
-                <br />
-                sed adipisicing eu esse duis nulla non.
+
                 <br />
                 &lt;/p&gt;
                 <br />
@@ -625,7 +593,7 @@ function App() {
         </div>
         <h4> Cards</h4>
         <div class="elementRow">
-          <span style={{ flex: 0.5 }}>Cards</span>
+          <span style={{ flex: 0.3 }}>Cards</span>
           <span style={{ flex: 0.5 }}>
             <div class="card">
               <h3>Card 1</h3>
@@ -651,13 +619,102 @@ function App() {
           </span>
           <br />
         </div>
+        <h4> Carousel</h4>
+        <div class="elementRow">
+          <span style={{ flex: 0.3 }}>Carousel</span>
+          <span style={{ flex: 0.5 }}>
+            <Carousel showThumbs={false}>
+              <div>
+                <img src={tajMahalfullImage} style={{ width: "50%", height: "50%" }} />
+
+              </div>
+              <div>
+                <img src={tajMahalImage} style={{ width: "50%", height: "50%" }} />
+
+              </div>
+              <div>
+                <img src={tagmahalmoonImage} style={{ width: "50%", height: "50%" }} />
+
+              </div>
+            </Carousel>
+          </span>
+          <span style={{ flex: 1 }}>
+            <pre>
+              <code>
+                &lt;Carousel&gt;  <br />
+                &lt;div&gt;   <br />
+                &lt;img src="/image.jpeg" /&gt; <br />
+                &lt;/div&gt;   <br />
+                &lt;div&gt;  <br />
+                &lt;img src=/image.jpeg /&gt;   <br />
+                &lt;/div&gt;   <br />
+                &lt;div&gt;   <br />
+                &lt;img src=/image.jpeg/&gt;   <br />
+                &lt;/div&gt;   <br />
+                &lt;/Carousel&gt;   <br />
+              </code>
+            </pre>
+          </span>
+          <br />
+        </div>
+        <h4> Tables</h4>
+        <div class="elementRow">
+          <span style={{ flex: 0.3 }}>Table</span>
+          <span style={{ flex: 0.5 }}>
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+              </tr>
+              <tr>
+                <td>Anom</td>
+                <td>19</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>Rekha</td>
+                <td>19</td>
+                <td>Female</td>
+              </tr>
+              <tr>
+                <td>Subham</td>
+                <td>25</td>
+                <td>Male</td>
+              </tr>
+            </table>
+          </span>
+          <span style={{ flex: 1 }}>
+            <pre>
+              <code>
+                &lt;table&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;th&gt;Name&lt;/th&gt;<br />
+                &lt;th&gt;Age&lt;/th&gt;<br />
+                &lt;th&gt;Gender&lt;/th&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+
+                &lt;/tr&gt;<br />
+                &lt;/table&gt;<br />
+              </code>
+            </pre>
+          </span>
+          <br />
+        </div>
+
       </div>
     );
   }
 
   function Navigations() {
     return (
-      <nav className="navigation-1">
+      <div id ="navigationSection" style={{ height: 'calc(100vh - 60px)'}}>
+      <h3>Navigation</h3>
+      <div class="elementRow">
+      <span style={{ flex: 0.5 }}> Navigation </span>
+      <span style={{ flex: 0.5 }}>
+        <nav className="navigation-1">
         <button
           className="hamburger"
           onClick={() => {
@@ -666,7 +723,7 @@ function App() {
         >
           {/* hamburger svg code... */}
         </button>
-        {/* <div
+        <div
         className={
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
         }
@@ -678,12 +735,41 @@ function App() {
           <li>
             <a href="">About</a>
           </li>
-          <li>
-            <a href="/">Contact</a>
-          </li>
         </ul>
-      </div> */}
+      </div>
       </nav>
+      </span>
+      <span style={{ flex: 1 }}>
+        <pre>
+          <code>
+          &lt;nav className="navigation"&gt;<br/>
+        &lt;button
+          className="hamburger"
+        
+        &gt;<br/>
+          {/* hamburger svg code... */}
+        &lt;/button&gt;<br/>
+        &lt;div<br/>
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      &gt;<br/>
+        &lt;ul&gt;<br/>
+          &lt;li&gt;<br/>
+            &lt;a href=""&gt;Home&lt;/a&gt;<br/>
+          &lt;/li&gt;<br/>
+          &lt;li&gt;<br/>
+            &lt;a href=""&gt;About&lt;/a&gt;<br/>
+          &lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;/nav&gt;<br/>
+          </code>;
+        </pre>
+      </span>
+      <br />
+    </div>
+     </div>
     );
   }
   return (
@@ -699,13 +785,12 @@ function App() {
             <Forms />
             <Lists />
           </>
-        ) : // menuItem == 3 ?
-        // < Lists /> :
-        menuItem == 4 ? (
-          <Components />
-        ) : (
-          ""
-        )}
+        ) : 
+          menuItem == 4 ? (
+            <Components />
+          ) : (
+            ""
+          )}
       </div>
       <CopyrightFooter />
     </div>
