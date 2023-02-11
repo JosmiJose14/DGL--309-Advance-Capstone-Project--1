@@ -19,9 +19,12 @@ const NavIcon = styled(Link)`
   margin-left: 2rem;
   font-size: 2rem;
   height: 80px;
-  display: flex;
+  display: none;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: 900px) {
+    display: flex;
+  }
 `;
  
 const SidebarNav = styled.nav`
@@ -29,20 +32,24 @@ const SidebarNav = styled.nav`
   width: 250px;
   height: 100vh;
   display: flex;
+  position: absolute;
   justify-content: center;
-  position: fixed;
-  top: 0;
+  top: 78px;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
   z-index: 10;
+  @media (max-width: 900px) {
+    top: 0;
+  }
 `;
  
 const SidebarWrap = styled.div`
   width: 100%;
 `;
  
+
 const Sidebar = () => {
-  const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(true);
  
   const showSidebar = () => setSidebar(!sidebar);
  
@@ -56,9 +63,9 @@ const Sidebar = () => {
           <h1
             style={{ textAlign: "center",
                      margin: "auto",
-                     color: "#9f1313" }}
+                     color: "#ffffff" }}
           >
-           Hair Salon Design Systems
+           Hair with Flair Pattern Library
           </h1>
         </Nav>
         <SidebarNav sidebar={sidebar}>

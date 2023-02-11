@@ -1,7 +1,13 @@
+//Setup react js in visual studio code
+//https://www.geeksforgeeks.org/how-to-create-a-responsive-sidebar-with-dropdown-menu-in-reactjs/
+
+
+//navigation implemented
+//https://www.geeksforgeeks.org/how-to-create-a-responsive-sidebar-with-dropdown-menu-in-reactjs/
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Heading, Typography, Colors } from "./pages/StyleElements";
+import { Typography, Colors } from "./pages/StyleElements";
 import {
   Services,
   ServicesOne,
@@ -16,7 +22,8 @@ function App() {
     <Router>
       <Sidebar />
       <Routes>
-        <Route path='//style-elements' element={<Heading/>} />
+        
+        {/* <Route path='' element={<TypoHeading/>} /> */}
         <Route path='/style-elements/typography' element={<Typography/>} />
         <Route path='//style-elements/colors' element={<Colors/>} />
         <Route path='/services' element={<Services/>} />
@@ -30,6 +37,7 @@ function App() {
         <Route path='/support' element={<Support/>} />
       </Routes>
     </Router>
+    
   );
 }
    
