@@ -154,15 +154,59 @@ export const Colors = () => {
            <br/>
            {/* reference site - https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox */}
            <div class="flex-container">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
-            <div class="item">7</div>
-            <div class="item">8</div>
-          </div>
+            <div class="card" style={{backgroundColor:'#000000',color:'#ffffff'}}>
+              <h3>body text color</h3>
+              <p>hex - #000000 </p>
+              <p>rgb - RGB (0, 0, 0)</p>
+            </div>
+            <div class="card" style={{backgroundColor:'#b82243',color:'#ffffff'}}>
+              <h3>header text color</h3>
+              <p>hex - #b82243 </p>
+              <p>rgb - RGB (184, 34, 67)</p>
+            </div>
+            <div class="card" style={{backgroundColor:'#ffffff',color:'#000000'}}>
+              <h3>background color</h3>
+              <p>hex - #ffffff </p>
+              <p>rgb - RGB (255, 255, 255) </p>
+            </div>
+            <div class="card" style={{backgroundColor:'#e61158',color:'#ffffff'}}>
+              <h3>primary button color</h3>
+              <p>hex - #e61158 </p>
+              <p>rgb - RGB (230, 17, 88)</p>
+            </div>
+            <div class="card" style={{backgroundColor:'#ECD1A0',color:'#ffffff'}}>
+              <h3>secondary button color</h3>
+              <p>hex - #ECD1A0 </p>
+              <p>rgb - RGB (236, 209, 160)</p>
+            </div>
+            <div class="card" style={{backgroundColor:'#418433',color:'#ffffff'}}>
+              <h3>success message</h3>
+              <p>hex - #418433 </p>
+              <p>rgb - RGB (65, 132, 51)</p>
+            </div>
+            <div class="card" style={{backgroundColor:'#bc3907',color:'#ffffff'}}>
+              <h3>error message</h3>
+              <p>hex - #bc3907 </p>
+              <p>rgb - RGB (188, 57, 7)</p>
+            </div>
+            <div class="card" style={{backgroundColor:'#958689',color:'#ffffff'}}>
+              <h3>button hover</h3>
+              <p>hex - #958689 </p>
+              <p>rgb - RGB (149, 134, 137)</p>
+            </div>
+       </div>
     </div>
+  );
+};
+export const Images = () => {
+  return (
+    <div className="clsImages" class="marginleft">
+      <h2>Images</h2>
+      <p>A design system's image style guide will typically 
+        outline specific guidelines for all of these elements,
+         as well as any other relevant visual or formatting specifications, 
+         to ensure that images are consistent with the overall look and feel of the brand.
+</p>
+      </div>
   );
 };

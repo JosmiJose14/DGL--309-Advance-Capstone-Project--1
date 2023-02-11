@@ -19,8 +19,13 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "Colours",
+        title: "Colors",
         path: "/style-elements/colors",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Images",
+        path: "/style-elements/images",
         icon: <IoIcons.IoIosPaper />,
       },
     ],
