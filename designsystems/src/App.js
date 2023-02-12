@@ -16,7 +16,7 @@ import {
 } from "./pages/Services";
 import { Events, EventsOne, EventsTwo } from "./pages/Events";
 import Contact from "./pages/ContactUs";
-import Navigation from "./pages/Navigation";
+import { Navigation, NavbarSubmenu } from "./pages/Navigation";
 function App() {
   return (
     <Router>
@@ -28,6 +28,7 @@ function App() {
         <Route path='//style-elements/colors' element={<Colors/>} />
         <Route path='//style-elements/images' element={<Images/>} />
         <Route path='/navigation/navigations' element={<Navigation/>} />
+        <Route path='/navigation/navSubmenu' element={<NavbarSubmenu/>}/>
         <Route path='/services' element={<Services/>} />
         <Route path='/services/services1' element={<ServicesOne/>} />
         <Route path='/services/services2' element={<ServicesTwo/>} />

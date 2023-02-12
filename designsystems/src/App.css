@@ -225,8 +225,16 @@ pre{
 .submenu a {
   display: block;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 @media screen and (max-width: 768px) {
+ ul .submenu {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    display: inline-block !important;
+   
+  }
   .hamburger {
     display: block;
   }
@@ -262,4 +270,5 @@ pre{
     display: block;
     height: auto;
   }
+ 
 }
