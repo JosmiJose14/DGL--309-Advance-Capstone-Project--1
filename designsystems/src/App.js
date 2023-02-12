@@ -27,7 +27,7 @@ function App() {
         <Route path='/style-elements/typography' element={<Typography/>} />
         <Route path='//style-elements/colors' element={<Colors/>} />
         <Route path='//style-elements/images' element={<Images/>} />
-        <Route path='/navigation/navigations"' element={<Navigation/>} />
+        <Route path='/navigation/navigations' element={<Navigation/>} />
         <Route path='/services' element={<Services/>} />
         <Route path='/services/services1' element={<ServicesOne/>} />
         <Route path='/services/services2' element={<ServicesTwo/>} />

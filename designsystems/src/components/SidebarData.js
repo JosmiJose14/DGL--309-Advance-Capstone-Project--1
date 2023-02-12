@@ -31,6 +31,20 @@ export const SidebarData = [
     ],
   },
   {
+    title: "Navigation",
+    path: "/navigation/navigations",
+    icon: <IoIcons.IoMdHelpCircle />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: "Navbar",
+        path: "/navigation/navigations",
+        icon: <IoIcons.IoIosPaper />,
+      }
+    ],
+  },
+  {
     title: "Services",
     path: "/services",
     icon: <IoIcons.IoIosPaper />,
@@ -82,19 +96,6 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
       },
     ],
-  },
-  {
-    title: "Navigation",
-    path: "/navigation/navigations",
-    icon: <IoIcons.IoMdHelpCircle />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-    subNav: [
-      {
-        title: "Navigations",
-        path: "/navigation/navigations",
-        icon: <IoIcons.IoIosPaper />,
-      }
-    ],
-  },
+  }
+  
 ];
