@@ -51,7 +51,10 @@ table th {
   text-transform: uppercase;
 }
 pre{
-  background-color: rgb(179, 174, 174);
+  background-color: rgb(179, 174, 174);  
+  text-align: left;
+  overflow-x: auto;
+  padding: 4%;
 }
 .flex-container {
   display: flex;
@@ -64,10 +67,46 @@ pre{
   padding: 20px;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-  width: 35%;
-  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #000000;
+  overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+}
+.card-text .expandHideCode{
+    position: relative;
+    text-align: left;
+    color:#ffffff;
+}
+.imgborderCss
+{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
 }
 @media screen and (max-width: 900px) {
   table {
@@ -117,5 +156,12 @@ pre{
   .marginleft
 {
   margin-left: 0px;
+}
+.flex-container {
+  flex-direction: column;
+}
+.card
+{
+  width: 85%;
 }
 }

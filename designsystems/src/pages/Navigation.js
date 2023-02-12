@@ -1,11 +1,11 @@
 import React from "react";
  
-const Support = () => {
+const Navigation = () => {
   return (
-    <div className="support">
+    <div className="clsNavigation">
       <h1>GeeksforGeeks Support us</h1>
     </div>
   );
 };
  
-export default Support;
+export default Navigation;

@@ -7,7 +7,7 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Typography, Colors } from "./pages/StyleElements";
+import { Typography, Colors,Images } from "./pages/StyleElements";
 import {
   Services,
   ServicesOne,
@@ -16,7 +16,7 @@ import {
 } from "./pages/Services";
 import { Events, EventsOne, EventsTwo } from "./pages/Events";
 import Contact from "./pages/ContactUs";
-import Support from "./pages/Support";
+import Navigation from "./pages/Navigation";
 function App() {
   return (
     <Router>
@@ -26,6 +26,8 @@ function App() {
         {/* <Route path='' element={<TypoHeading/>} /> */}
         <Route path='/style-elements/typography' element={<Typography/>} />
         <Route path='//style-elements/colors' element={<Colors/>} />
+        <Route path='//style-elements/images' element={<Images/>} />
+        <Route path='/navigation/navigations"' element={<Navigation/>} />
         <Route path='/services' element={<Services/>} />
         <Route path='/services/services1' element={<ServicesOne/>} />
         <Route path='/services/services2' element={<ServicesTwo/>} />
@@ -34,7 +36,7 @@ function App() {
         <Route path='/events' element={<Events/>} />
         <Route path='/events/events1' element={<EventsOne/>} />
         <Route path='/events/events2' element={<EventsTwo/>} />
-        <Route path='/support' element={<Support/>} />
+      
       </Routes>
     </Router>
     
