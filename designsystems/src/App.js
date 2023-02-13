@@ -6,7 +6,7 @@
 //https://www.geeksforgeeks.org/how-to-create-a-responsive-sidebar-with-dropdown-menu-in-reactjs/
 import "./App.css";
 import Sidebar from "./components/Sidebar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route ,Navigate } from "react-router-dom";
 import { Typography, Colors,Images } from "./pages/StyleElements";
 import {Accordian} from "./pages/Components";
 
@@ -19,17 +19,17 @@ function App() {
     <Router>
       <Sidebar />
       <Routes>
-        
-        {/* <Route path='' element={<TypoHeading/>} /> */}
+        <Route path="/" element={<Navigate to="/style-elements/typography" />}></Route>
         <Route path='/style-elements/typography' element={<Typography/>} />
-        <Route path='//style-elements/colors' element={<Colors/>} />
-        <Route path='//style-elements/images' element={<Images/>} />
+        <Route path='/style-elements/colors' element={<Colors/>} />
+        <Route path='/style-elements/images' element={<Images/>} />
         <Route path='/navigation/navigations' element={<Navigation/>} />
         <Route path='/navigation/navSubmenu' element={<NavbarSubmenu/>}/>
         <Route path='/forms' element={<Forms/>} />
         <Route path='/button' element={<ButtonStyles/>} />
         <Route path='/list' element={<List/>} />
         <Route path='/components/accordian' element={<Accordian/>} />
+        
       </Routes>
     </Router>
     

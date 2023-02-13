@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import hairsalon from "../images/hairsalon.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+
 export const Typography = () => {
   return (
     <div className="clsTypography" class="marginleft">
