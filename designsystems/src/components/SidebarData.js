@@ -68,30 +68,30 @@ export const SidebarData = [
     icon: <FaIcons.FaList />,
   },
   {
-    title: "Services",
-    path: "/services",
-    icon: <IoIcons.IoIosPaper />,
+    title: "Components",
+    path: "/components/accordian",
+    icon: <IoIcons.IoIosInfinite />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
  
     subNav: [
       {
-        title: "Service 1",
-        path: "/services/services1",
-        icon: <IoIcons.IoIosPaper />,
+        title: "Accordian",
+        path: "/components/accordian",
+        icon: <IoIcons.IoIosArrowDropdownCircle />,
         cName: "sub-nav",
       },
-      {
-        title: "Service 2",
-        path: "/services/services2",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-      {
-        title: "Service 3",
-        path: "/services/services3",
-        icon: <IoIcons.IoIosPaper />,
-      },
+      // {
+      //   title: "Service 2",
+      //   path: "/services/services2",
+      //   icon: <IoIcons.IoIosPaper />,
+      //   cName: "sub-nav",
+      // },
+      // {
+      //   title: "Service 3",
+      //   path: "/services/services3",
+      //   icon: <IoIcons.IoIosPaper />,
+      // },
     ],
   }
 ];

@@ -8,12 +8,7 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Typography, Colors,Images } from "./pages/StyleElements";
-import {
-  Services,
-  ServicesOne,
-  ServicesTwo,
-  ServicesThree,
-} from "./pages/Services";
+import {Accordian} from "./pages/Components";
 
 import { Navigation, NavbarSubmenu } from "./pages/Navigation";
 import { Forms } from "./pages/Forms";
@@ -34,10 +29,7 @@ function App() {
         <Route path='/forms' element={<Forms/>} />
         <Route path='/button' element={<ButtonStyles/>} />
         <Route path='/list' element={<List/>} />
-        <Route path='/services' element={<Services/>} />
-        <Route path='/services/services1' element={<ServicesOne/>} />
-        <Route path='/services/services2' element={<ServicesTwo/>} />
-        <Route path='/services/services3' element={<ServicesThree/>} />
+        <Route path='/components/accordian' element={<Accordian/>} />
       </Routes>
     </Router>
     

@@ -89,6 +89,13 @@ pre{
     width: 100%;
     max-width: 100%;
 }
+.card-textList
+{
+  font-size: 16px;
+  color: #000000;
+    width: 100%;
+    max-width: 100%;
+}
 .card-text .expandHideCode{
     position: relative;
     text-align: left;
@@ -194,7 +201,6 @@ input, select {
 #buttons:focus {
   outline: none;
 }
-
 @media screen and (max-width: 768px) {
   .clsTypography,
   .clsColors,
