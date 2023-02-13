@@ -16,38 +16,56 @@ export const SidebarData = [
       {
         title: "Typography",
         path: "/style-elements/typography",
-        icon: <IoIcons.IoIosPaper />,
+        icon: <IoIcons.IoIosTrophy />,
       },
       {
         title: "Colors",
         path: "/style-elements/colors",
-        icon: <IoIcons.IoIosPaper />,
+        icon: <IoIcons.IoIosColorFill />,
       },
       {
         title: "Images",
         path: "/style-elements/images",
-        icon: <IoIcons.IoIosPaper />,
+        icon: <IoIcons.IoIosImage />,
       },
     ],
   },
   {
     title: "Navigation",
     path: "/navigation/navigations",
-    icon: <IoIcons.IoMdHelpCircle />,
+    icon: <IoIcons.IoMdNavigate />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
       {
         title: "Navbar",
         path: "/navigation/navigations",
-        icon: <IoIcons.IoIosPaper />,
+        icon: <IoIcons.IoIosNavigate />,
       },
       {
         title: "Sub Menu",
         path: "/navigation/navSubmenu",
-        icon: <IoIcons.IoIosPaper />,
+        icon: <IoIcons.IoIosMenu />,
       }
     ],
+  },
+  {
+    title: "Forms",
+    path: "/forms",
+    icon: <FaIcons.FaWpforms />,
+ 
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />
+  },
+  {
+    title: "Buttons",
+    path: "/button",
+    icon: <FaIcons.FaInbox />,
+  },
+  {
+    title: "List",
+    path: "/list",
+    icon: <FaIcons.FaList />,
   },
   {
     title: "Services",
@@ -75,32 +93,5 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
       },
     ],
-  },
-  {
-    title: "Contact",
-    path: "/contact",
-    icon: <FaIcons.FaPhone />,
-  },
-  {
-    title: "Events",
-    path: "/events",
-    icon: <FaIcons.FaEnvelopeOpenText />,
- 
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
- 
-    subNav: [
-      {
-        title: "Event 1",
-        path: "/events/events1",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Event 2",
-        path: "/events/events2",
-        icon: <IoIcons.IoIosPaper />,
-      },
-    ],
   }
-  
 ];

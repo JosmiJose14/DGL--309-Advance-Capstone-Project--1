@@ -4,16 +4,6 @@
   margin: 0;
   padding: 0;
 }
-.home,
-.services,
-.reports,
-.contact,
-.events,
-.support {
-  display: flex;
-  margin-left: 260px;
-  font-size: 2rem;
-}
 
 .marginleft
 {
@@ -110,67 +100,16 @@ pre{
   border-radius: 4px;
   padding: 5px;
 }
-@media screen and (max-width: 900px) {
-  table {
-    border: 0;
-  }
 
-  table caption {
-    font-size: 1.3em;
-  }
-  
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  
-  table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: .625em;
-  }
-  
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-  }
-  
-  table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  table td:last-child {
-    border-bottom: 0;
-  }
-  .marginleft
-{
-  margin-left: 0px;
+input, select {
+  padding: 3px;
+  box-shadow: 3px 3px 5px grey;
+  font-size: 14px;
+  font-weight: 600;
 }
-.flex-container {
-  flex-direction: column;
-}
-.card
-{
-  width: 85%;
-}
-}
-
 .navigation {
   height: 60px;
-  width: 100%;
+  width: 95%;
   display: flex;
   align-items: center;
   position: relative;
@@ -227,7 +166,51 @@ pre{
   margin-bottom: 10px;
   color: #ffffff;
 }
+#buttons  {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Arial", serif;
+  padding: 5px 14px;
+  background: #e61158;
+  border: 0px;
+  margin-left: 0px;
+  margin-right: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+  box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+  color: #FFFAFA;
+}
+#buttons:hover
+{
+  background-color: #958689;
+  outline: none;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+  box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+}
+#buttons:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 768px) {
+  .clsTypography,
+  .clsColors,
+  .clsImages,
+  .clsNavigation,
+  .clsSubmenu,
+  .clsForms,
+  .clsbuttons,
+  .clsLists
+  {
+    margin: 10px;
+    font-size: 22px;
+  }
+     .card-title {
+    font-size: 22px;
+}
  ul .submenu {
     position: relative !important;
     top: auto !important;
@@ -270,5 +253,81 @@ pre{
     display: block;
     height: auto;
   }
- 
+  .card
+  {
+    width: 97%;
+  }
 }
+@media screen and (min-width: 768px) and (max-width: 900px) {
+ 
+  .card-title {
+  font-size: 30px !important;
+  }
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+    .marginleft
+  {
+    margin-left: 0px;
+  }
+  .clsTypography,
+    .clsColors,
+    .clsImages,
+    .clsNavigation,
+    .clsSubmenu,
+    .clsForms,
+    .clsbuttons,
+    .clsLists
+    {
+      margin: 10px;
+      font-size: 30px !important;
+    }
+  .flex-container {
+    flex-direction: column;
+  }
+  .card
+  {
+    width: 97%;
+  }
+  }

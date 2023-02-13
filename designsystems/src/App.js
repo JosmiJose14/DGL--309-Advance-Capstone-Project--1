@@ -14,9 +14,11 @@ import {
   ServicesTwo,
   ServicesThree,
 } from "./pages/Services";
-import { Events, EventsOne, EventsTwo } from "./pages/Events";
-import Contact from "./pages/ContactUs";
+
 import { Navigation, NavbarSubmenu } from "./pages/Navigation";
+import { Forms } from "./pages/Forms";
+import{ ButtonStyles }from "./pages/Button";
+import{ List }from "./pages/List";
 function App() {
   return (
     <Router>
@@ -29,15 +31,13 @@ function App() {
         <Route path='//style-elements/images' element={<Images/>} />
         <Route path='/navigation/navigations' element={<Navigation/>} />
         <Route path='/navigation/navSubmenu' element={<NavbarSubmenu/>}/>
+        <Route path='/forms' element={<Forms/>} />
+        <Route path='/button' element={<ButtonStyles/>} />
+        <Route path='/list' element={<List/>} />
         <Route path='/services' element={<Services/>} />
         <Route path='/services/services1' element={<ServicesOne/>} />
         <Route path='/services/services2' element={<ServicesTwo/>} />
         <Route path='/services/services3' element={<ServicesThree/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/events' element={<Events/>} />
-        <Route path='/events/events1' element={<EventsOne/>} />
-        <Route path='/events/events2' element={<EventsTwo/>} />
-      
       </Routes>
     </Router>
     

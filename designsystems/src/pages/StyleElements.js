@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 export const Typography = () => {
   return (
-    <div id="clsTypography" class="marginleft">
+    <div className="clsTypography" class="marginleft">
       <h2>Typography</h2>
       <p>
         Designing the typography of h1 to h6 headings in a design system
@@ -145,7 +145,7 @@ export const Typography = () => {
 
 export const Colors = () => {
   return (
-    <div className="clsColors" class="marginleft">
+    <div  class="clsColors marginleft">
       <h2>Colors</h2>
       <p>In a design system, different colors are used to
         create visual hierarchy, convey meaning, and establish
@@ -205,7 +205,7 @@ export const Images = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   return (
 
-    <div className="clsImages" class="marginleft">
+    <div class="clsImages marginleft">
       <h2>Images</h2>
       <p>A design system's image style guide will typically
         outline specific guidelines for all of these elements,
