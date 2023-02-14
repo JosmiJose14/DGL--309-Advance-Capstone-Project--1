@@ -30,7 +30,7 @@ const NavIcon = styled(Link)`
 const SidebarNav = styled.nav`
   background: #15171c;
   width: 250px;
-  height: 100vh;
+  height: calc(100vh - 77px);
   display: flex;
   position: absolute;
   justify-content: center;
@@ -68,16 +68,18 @@ const Sidebar = () => {
            Hair with Flair Pattern Library
           </h1>
         </Nav>
-        <SidebarNav sidebar={sidebar}>
-          <SidebarWrap>
-            <NavIcon to="#">
-              <AiIcons.AiOutlineClose onClick={showSidebar} />
-            </NavIcon>
-            {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
-            })}
-          </SidebarWrap>
-        </SidebarNav>
+        <div style={{backgroundColor: "black"}}>
+          <SidebarNav sidebar={sidebar}>
+            <SidebarWrap>
+              <NavIcon to="#">
+                <AiIcons.AiOutlineClose onClick={showSidebar} />
+              </NavIcon>
+              {SidebarData.map((item, index) => {
+                return <SubMenu item={item} key={index} />;
+              })}
+            </SidebarWrap>
+          </SidebarNav>
+        </div>
       </IconContext.Provider>
     </>
   );

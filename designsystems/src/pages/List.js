@@ -5,7 +5,7 @@ import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 export const List = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   return (
-    <div className="clsLists marginleft">
+    <div className="topPadding clsLists marginleft">
     <h2>List</h2>
     <p>Lists are used to organize information in a structured and easy-to-read format.</p>
     <div class="flex-container">
@@ -19,8 +19,8 @@ export const List = () => {
             <li>Milk</li>
           </ol></div>
           /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" onClick={() => setIsExpanded(!isExpanded)}>html
-              <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} />
+            <div class="expandHideCode">html
+            <br></br><br></br>
             </div>
             {isExpanded && (
               <pre>
@@ -45,8 +45,8 @@ export const List = () => {
             <li>Milk</li>
           </ul></div>
           /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" onClick={() => setIsExpanded(!isExpanded)}>html
-              <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} />
+            <div class="expandHideCode">html
+            <br></br><br></br>
             </div>
             {isExpanded && (
               <pre>

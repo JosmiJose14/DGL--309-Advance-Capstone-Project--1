@@ -4,7 +4,7 @@ import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 export const Forms = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   return (
-    <div className="clsForms marginleft">
+    <div className="topPadding clsForms marginleft">
       <h2>Labels and textbox</h2>
       <p>Labels and text boxes are elements commonly used in user interfaces to collect information from users.
         A label is a piece of text that is used to describe or explain a text box or another UI element.
@@ -14,11 +14,11 @@ export const Forms = () => {
         <input type="text" name="name" id="name" placeholder="ex: Josmi Jose"></input></div>
       
        <div class="flex-container">
-       <div className="card" style={{height:'auto'}}>
+       <div className="card" style={{height:'200px'}}>
          <p className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-           <div class="expandHideCode" style={{ color: 'black' }} onClick={() => setIsExpanded(!isExpanded)}>html
-             <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} />
+           <div class="expandHideCode" style={{ color: 'black' }} >html  <br></br><br></br>
+
            </div>
            {isExpanded && (
              <pre>
@@ -29,11 +29,11 @@ export const Forms = () => {
              </pre>
            )}</p>
        </div>
-       <div className="card" style={{height:'auto'}}>
+       <div className="card" style={{height:'200px'}}>
          <p className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-           <div class="expandHideCode" style={{ color: 'black' }} onClick={() => setIsExpanded(!isExpanded)}>css
-             <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} />
+           <div class="expandHideCode" style={{ color: 'black' }}>css
+           <br></br><br></br>
            </div>
            {isExpanded && (
              <pre>
@@ -63,11 +63,12 @@ export const Forms = () => {
         </select>
       </div>
       <div class="flex-container">
-       <div className="card" style={{height:'auto'}}>
+       <div className="card" style={{height:'200px'}}>
          <p className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-           <div class="expandHideCode" style={{ color: 'black' }} onClick={() => setIsExpanded(!isExpanded)}>html
-             <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} />
+           <div class="expandHideCode" style={{ color: 'black' }} >html
+           <br></br><br></br>
+
            </div>
            {isExpanded && (
              <pre>
@@ -78,11 +79,12 @@ export const Forms = () => {
              </pre>
            )}</p>
        </div>
-       <div className="card" style={{height:'auto'}}>
+       <div className="card" style={{height:'200px'}}>
          <p className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-           <div class="expandHideCode" style={{ color: 'black' }} onClick={() => setIsExpanded(!isExpanded)}>css
-             <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} />
+           <div class="expandHideCode" style={{ color: 'black' }} >css
+           <br></br><br></br>
+
            </div>
            {isExpanded && (
              <pre>

@@ -8,7 +8,7 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route ,Navigate } from "react-router-dom";
 import { Typography, Colors,Images } from "./pages/StyleElements";
-import {Accordian} from "./pages/Components";
+import {Accordian, Carousels,Table,Card} from "./pages/Components";
 
 import { Navigation, NavbarSubmenu } from "./pages/Navigation";
 import { Forms } from "./pages/Forms";
@@ -19,6 +19,8 @@ function App() {
     <Router>
       <Sidebar />
       <Routes>
+
+        {/* reference -https://stackoverflow.com/questions/29552601/how-to-set-the-defaultroute-to-another-route-in-react-router/43958016#43958016 */}
         <Route path="/" element={<Navigate to="/style-elements/typography" />}></Route>
         <Route path='/style-elements/typography' element={<Typography/>} />
         <Route path='/style-elements/colors' element={<Colors/>} />
@@ -29,7 +31,9 @@ function App() {
         <Route path='/button' element={<ButtonStyles/>} />
         <Route path='/list' element={<List/>} />
         <Route path='/components/accordian' element={<Accordian/>} />
-        
+        <Route path='/components/carousel' element={<Carousels/>} />
+        <Route path='/components/table' element={<Table/>} />
+        <Route path='/components/card' element={<Card/>} />
       </Routes>
     </Router>
     

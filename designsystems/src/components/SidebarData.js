@@ -81,17 +81,24 @@ export const SidebarData = [
         icon: <IoIcons.IoIosArrowDropdownCircle />,
         cName: "sub-nav",
       },
-      // {
-      //   title: "Service 2",
-      //   path: "/services/services2",
-      //   icon: <IoIcons.IoIosPaper />,
-      //   cName: "sub-nav",
-      // },
-      // {
-      //   title: "Service 3",
-      //   path: "/services/services3",
-      //   icon: <IoIcons.IoIosPaper />,
-      // },
+      {
+        title: "Carousel",
+        path: "/components/carousel",
+        icon: <IoIcons.IoIosImages />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Table",
+        path: "/components/table",
+        icon: <IoIcons.IoIosTabletLandscape />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Card",
+        path: "/components/card",
+        icon: <IoIcons.IoIosCard />,
+        cName: "sub-nav",
+      },
     ],
   }
 ];
