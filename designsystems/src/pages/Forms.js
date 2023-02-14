@@ -14,7 +14,7 @@ export const Forms = () => {
         <input type="text" name="name" id="name" placeholder="ex: Josmi Jose"></input></div>
       
        <div class="flex-container">
-       <div className="card" style={{height:'200px'}}>
+       <div className="card" style={{height:'250px'}}>
          <p className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
            <div class="expandHideCode" style={{ color: 'black' }} >html  <br></br><br></br>
@@ -29,7 +29,7 @@ export const Forms = () => {
              </pre>
            )}</p>
        </div>
-       <div className="card" style={{height:'200px'}}>
+       <div className="card" style={{height:'250px'}}>
          <p className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
            <div class="expandHideCode" style={{ color: 'black' }}>css
@@ -63,7 +63,7 @@ export const Forms = () => {
         </select>
       </div>
       <div class="flex-container">
-       <div className="card" style={{height:'200px'}}>
+       <div className="card" style={{height:'250px'}}>
          <p className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
            <div class="expandHideCode" style={{ color: 'black' }} >html
@@ -79,7 +79,7 @@ export const Forms = () => {
              </pre>
            )}</p>
        </div>
-       <div className="card" style={{height:'200px'}}>
+       <div className="card" style={{height:'250px'}}>
          <p className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
            <div class="expandHideCode" style={{ color: 'black' }} >css

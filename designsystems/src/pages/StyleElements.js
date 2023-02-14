@@ -15,7 +15,7 @@ export const Typography = () => {
         developers to create visually appealing and effective headings.
       </p>
       <br />
-      <div style={{height: '550px', overflow: 'auto'}}>
+      <div style={{height: '650px', overflow: 'auto'}}>
       <table>
         <tbody>
           <tr>

@@ -212,7 +212,7 @@ input, select {
 .carousel .control-dots .dot {
   background: #ff0038 !important;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 712px) {
   .clsTypography,
   .clsColors,
   .clsImages,
@@ -229,7 +229,7 @@ input, select {
     margin: 10px;
     font-size: 22px;
   }
-     .card-title {
+     .card-title,pre,.expandHideCode {
     font-size: 22px;
 }
  ul .submenu {
@@ -279,9 +279,9 @@ input, select {
     width: 97%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 712px) and (max-width: 900px) {
  
-  .card-title {
+  .card-title,pre,.expandHideCode {
   font-size: 30px !important;
   }
     table {
