@@ -316,7 +316,7 @@ export const Card = () => {
       <p>Cards are often used to group related content together, and are frequently found in responsive web design because they can adapt to different screen sizes and orientations. They can be used to display a variety of content, such as articles, blog posts, products, images, and more.</p>
       <br />
       <div class="flex-container">
-        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '70%' }}>
+        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '300px',width:'30%' }}>
           <img src={hairsalon} fluid={true} alt="hair-salon" />
           <div className="card-body" style={{ height: '60px' }}>
             <p className="card-title"><h4>Title</h4></p>
@@ -328,7 +328,7 @@ export const Card = () => {
             </p>
           </div>
         </div>
-        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '70%' }}>
+        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '300px',width:'30%'  }}>
           <img src={hairsalon} fluid={true} alt="hair-salon" />
           <div className="card-body" style={{ height: '60px' }}>
             <p className="card-title"><h4>Title</h4></p>
@@ -342,7 +342,7 @@ export const Card = () => {
         </div>
       </div>
       <div class="flex-container">
-        <div className="card" style={{ height: '250px', width: '97%' }}>
+        <div className="card" style={{ height: '250px', width: '43%' }}>
           <p className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div class="expandHideCode" style={{ color: 'black' }} >Html
@@ -369,7 +369,7 @@ export const Card = () => {
               </pre>
             )}</p>
         </div>
-        <div className="card" style={{ height: '250px', width: '97%' }}>
+        <div className="card" style={{ height: '250px', width: '43%' }}>
           <p className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div class="expandHideCode" style={{ color: 'black' }}>css

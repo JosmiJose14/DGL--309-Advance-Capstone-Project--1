@@ -14,6 +14,7 @@ import { Navigation, NavbarSubmenu } from "./pages/Navigation";
 import { Forms } from "./pages/Forms";
 import{ ButtonStyles }from "./pages/Button";
 import{ List }from "./pages/List";
+import Footer from './components/Footer';
 function App() {
   return (
     <Router>
@@ -35,6 +36,7 @@ function App() {
         <Route path='/components/table' element={<Table/>} />
         <Route path='/components/card' element={<Card/>} />
       </Routes>
+      <Footer />
     </Router>
     
   );
