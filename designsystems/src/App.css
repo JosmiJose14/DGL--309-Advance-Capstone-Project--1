@@ -303,7 +303,7 @@ input, select {
       width: 1px;
     }
     
-    table tr {
+    table th,table tr {
       border-bottom: 3px solid #ddd;
       display: block;
       margin-bottom: .625em;

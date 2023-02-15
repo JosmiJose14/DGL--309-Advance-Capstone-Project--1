@@ -20,46 +20,46 @@ export const Accordian = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding classAccordian marginleft ">
-      <h2 style={{paddingTop: 20}}>Accordian</h2>
-      <p style={{paddingTop: 10, paddingBottom: 10}}>React accordion refers to an expandable and collapsible content panel. Accordions are commonly used to organize and present information in a compact and organized manner, allowing users to toggle between the visibility of different sections of content.</p>
+      <h2 style={{ paddingTop: 20 }}>Accordian</h2>
+      <p style={{ paddingTop: 10, paddingBottom: 10 }}>React accordion refers to an expandable and collapsible content panel. Accordions are commonly used to organize and present information in a compact and organized manner, allowing users to toggle between the visibility of different sections of content.</p>
 
       <Accordion allowMultipleExpanded={true} allowZeroExpanded={true} >
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        What harsh truths do you prefer to ignore?
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                        Exercitation in fugiat est ut ad ea cupidatat ut in
-                        cupidatat occaecat ut occaecat consequat est minim minim
-                        esse tempor laborum consequat esse adipisicing eu
-                        reprehenderit enim.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Is free will real or just an illusion?
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                        In ad velit in ex nostrud dolore cupidatat consectetur
-                        ea in ut nostrud velit in irure cillum tempor laboris
-                        sed adipisicing eu esse duis nulla non.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-        </Accordion>
-        <div class="flex-container">
-        <div className="card" style={{height:'150px',width:'100%'}}>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>
+              What harsh truths do you prefer to ignore?
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <p>
+              Exercitation in fugiat est ut ad ea cupidatat ut in
+              cupidatat occaecat ut occaecat consequat est minim minim
+              esse tempor laborum consequat esse adipisicing eu
+              reprehenderit enim.
+            </p>
+          </AccordionItemPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>
+              Is free will real or just an illusion?
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <p>
+              In ad velit in ex nostrud dolore cupidatat consectetur
+              ea in ut nostrud velit in irure cillum tempor laboris
+              sed adipisicing eu esse duis nulla non.
+            </p>
+          </AccordionItemPanel>
+        </AccordionItem>
+      </Accordion>
+      <div class="flex-container">
+        <div className="card" style={{ height: '150px', width: '100%' }}>
           <p className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div class="expandHideCode" style={{ color: 'black' }} >Command Prompt
-            <br></br>
+              <br></br>
               {/* <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} /> */}
             </div>
             {isExpanded && (
@@ -70,14 +70,14 @@ export const Accordian = () => {
               </pre>
             )}</p>
         </div>
-        <div className="card" style={{height:'280px',width:'100%'}}>
-        <div class="expandHideCode" style={{ color: 'black' }} >react.js
+        <div className="card" style={{ height: '280px', width: '100%' }}>
+          <div class="expandHideCode" style={{ color: 'black' }} >react.js
             <br></br></div>
           <p className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            
-              {/* <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} /> */}
-            
+
+            {/* <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} /> */}
+
             {isExpanded && (
               <pre>
                 <code>
@@ -130,36 +130,36 @@ import 'react-accessible-accordion/dist/fancy-example.css';
     </div>
   );
 };
- 
+
 export const Carousels = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding classCarousel marginleft">
-     <h2>Carousel</h2>
+      <h2>Carousel</h2>
       <p>A carousel in React is a component that displays a rotating set of items, typically images, in a circular fashion. There are many pre-built carousel components available for React that you can use, or you can build your own from scratch.</p>
-      <br/>
-      <div style={{    width: '70%',height: '200px'}}>
-      <Carousel showThumbs={false}>
-              <div>
-                <img src={tajMahalfullImage} style={{ width: "50%", height: "50%" }} />
+      <br />
+      <div style={{ width: '70%', height: '200px' }}>
+        <Carousel showThumbs={false}>
+          <div>
+            <img src={tajMahalfullImage} style={{ width: "50%", height: "50%" }} />
 
-              </div>
-              <div>
-                <img src={tajMahalImage} style={{ width: "50%", height: "50%" }} />
+          </div>
+          <div>
+            <img src={tajMahalImage} style={{ width: "50%", height: "50%" }} />
 
-              </div>
-              <div>
-                <img src={tagmahalmoonImage} style={{ width: "50%", height: "50%" }} />
+          </div>
+          <div>
+            <img src={tagmahalmoonImage} style={{ width: "50%", height: "50%" }} />
 
-              </div>
-            </Carousel>
-            </div>
-            <div class="flex-container">
-        <div className="card" style={{height:'140px',width:'100%'}}>
+          </div>
+        </Carousel>
+      </div>
+      <div class="flex-container">
+        <div className="card" style={{ height: '140px', width: '100%' }}>
           <p className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div class="expandHideCode" style={{ color: 'black' }} >Command Prompt
-            <br></br>
+              <br></br>
             </div>
             {isExpanded && (
               <pre>
@@ -169,11 +169,11 @@ export const Carousels = () => {
               </pre>
             )}</p>
         </div>
-        <div className="card" style={{height:'275px',width:'100%'}}>
+        <div className="card" style={{ height: '275px', width: '100%' }}>
           <p className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div class="expandHideCode" style={{ color: 'black' }}>react.js
-            <br></br>
+              <br></br>
             </div>
             {isExpanded && (
               <pre>
@@ -196,29 +196,127 @@ import { Carousel } from 'react-responsive-carousel';
             )}</p>
         </div>
       </div>
-       </div>
+    </div>
   );
 };
- 
+
 export const Table = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding classTable marginleft">
-     <h2>Table</h2>
-      <p>A carousel in React is a component that displays a rotating set of items, typically images, in a circular fashion. There are many pre-built carousel components available for React that you can use, or you can build your own from scratch.</p>
-      <br/>     
-       </div>
+      <h2>Table</h2>
+      <p>a table is a way to display data in rows and columns. It allows you to organize and present information in a structured format, similar to a spreadsheet.</p>
+      <br />
+      <table style={{width:'97%'}}>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+        </tr>
+        <tr>
+          <td>Anom</td>
+          <td>19</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>Rekha</td>
+          <td>19</td>
+          <td>Female</td>
+        </tr>
+      </table>
+      <div class="flex-container">
+        <div className="card" style={{ height: '250px', width: '97%' }}>
+          <p className="card-text"> {
+            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+            <div class="expandHideCode" style={{ color: 'black' }} >Html
+              <br></br>
+            </div>
+            {isExpanded && (
+              <pre>
+                <code>
+                  {` <table>
+<tr>
+  <th>Name</th>
+  <th>Age</th>
+  <th>Gender</th>
+</tr>
+<tr>
+  <td>Anom</td>
+  <td>19</td>
+  <td>Male</td>
+</tr>
+<tr>
+  <td>Rekha</td>
+  <td>19</td>
+  <td>Female</td>
+</tr>
+<tr>
+  <td>Subham</td>
+  <td>25</td>
+  <td>Male</td>
+</tr>
+</table> `}
+                </code>
+              </pre>
+            )}</p>
+        </div>
+        <div className="card" style={{ height: '250px', width: '97%' }}>
+          <p className="card-text"> {
+            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+            <div class="expandHideCode" style={{ color: 'black' }}>css
+              <br></br>
+            </div>
+            {isExpanded && (
+              <pre>
+                <code>
+                  {`table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: left;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}`}
+                </code>
+              </pre>
+            )}</p>
+        </div>
+      </div>
+    </div>
   );
 };
-  export const Card = () => {
-    const [isExpanded, setIsExpanded] = useState(true);
-    return (
-      <div className="topPadding classCard marginleft">
-       <h2>Card</h2>
-        <p>A carousel in React is a component that displays a rotating set of items, typically images, in a circular fashion. There are many pre-built carousel components available for React that you can use, or you can build your own from scratch.</p>
-        <br/>     
-         </div>
-    );
+export const Card = () => {
+  const [isExpanded, setIsExpanded] = useState(true);
+  return (
+    <div className="topPadding classCard marginleft">
+      <h2>Card</h2>
+      <p>A carousel in React is a component that displays a rotating set of items, typically images, in a circular fashion. There are many pre-built carousel components available for React that you can use, or you can build your own from scratch.</p>
+      <br />
+    </div>
+  );
 };
- 
+
 
