@@ -41,11 +41,11 @@ export const Navigation = () => {
         </div>
       </nav>
       <div class="flex-container">
-        <div className="card" style={{height:'500px'}}>
+        <div className="card" style={{ height: '500px' }}>
           <p className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div class="expandHideCode" style={{ color: 'black' }} >react.js
-            <br></br><br></br>
+              <br></br><br></br>
             </div>
             {isExpanded && (
               <pre>
@@ -88,11 +88,11 @@ const [isNavExpanded, setIsNavExpanded] = useState(false);
               </pre>
             )}</p>
         </div>
-        <div className="card" style={{height:'500px'}}>
+        <div className="card" style={{ height: '500px' }}>
           <p className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div class="expandHideCode" style={{ color: 'black' }}>css
-            <br></br><br></br>
+              <br></br><br></br>
             </div>
             {isExpanded && (
               <pre>
@@ -199,10 +199,10 @@ export const NavbarSubmenu = () => {
 
   return (
     <div className="topPadding clsSubmenu marginleft">
-<h2>Navbar Submenu</h2>
-<p>A navigation bar submenu is a secondary drop-down menu that is triggered by hovering over or clicking on a main menu item. It allows for further categorization and organization of navigation items within a website or application.</p>
-<br/>
-<nav className="navigation">
+      <h2>Navbar Submenu</h2>
+      <p>A navigation bar submenu is a secondary drop-down menu that is triggered by hovering over or clicking on a main menu item. It allows for further categorization and organization of navigation items within a website or application.</p>
+      <br />
+      <nav className="navigation">
         <button
           className="hamburger"
           onClick={() => {
@@ -245,11 +245,11 @@ export const NavbarSubmenu = () => {
         </div>
       </nav>
       <div class="flex-container">
-        <div className="card" style={{height:'500px'}}>
+        <div className="card" style={{ height: '500px' }}>
           <p className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div class="expandHideCode" style={{ color: 'black' }} >react.js
-            <br></br><br></br>
+              <br></br><br></br>
             </div>
             {isExpanded && (
               <pre>
@@ -310,11 +310,11 @@ const handleToggle = () => {
               </pre>
             )}</p>
         </div>
-        <div className="card" style={{height:'500px'}}>
+        <div className="card" style={{ height: '500px' }}>
           <p className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div class="expandHideCode" style={{ color: 'black' }} >css
-            <br></br><br></br>
+              <br></br><br></br>
             </div>
             {isExpanded && (
               <pre>

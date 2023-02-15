@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import hairsalon from "../images/hairsalon.jpg";
 import {
   Accordion,
   AccordionItem,
@@ -130,7 +130,7 @@ import 'react-accessible-accordion/dist/fancy-example.css';
     </div>
   );
 };
-
+//reference- // https://www.javatpoint.com/carousel-in-react
 export const Carousels = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   return (
@@ -207,7 +207,7 @@ export const Table = () => {
       <h2>Table</h2>
       <p>a table is a way to display data in rows and columns. It allows you to organize and present information in a structured format, similar to a spreadsheet.</p>
       <br />
-      <table style={{width:'97%'}}>
+      <table style={{ width: '97%' }}>
         <tr>
           <th>Name</th>
           <th>Age</th>
@@ -313,8 +313,120 @@ export const Card = () => {
   return (
     <div className="topPadding classCard marginleft">
       <h2>Card</h2>
-      <p>A carousel in React is a component that displays a rotating set of items, typically images, in a circular fashion. There are many pre-built carousel components available for React that you can use, or you can build your own from scratch.</p>
+      <p>Cards are often used to group related content together, and are frequently found in responsive web design because they can adapt to different screen sizes and orientations. They can be used to display a variety of content, such as articles, blog posts, products, images, and more.</p>
       <br />
+      <div class="flex-container">
+        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '70%' }}>
+          <img src={hairsalon} fluid={true} alt="hair-salon" />
+          <div className="card-body" style={{ height: '60px' }}>
+            <p className="card-title"><h4>Title</h4></p>
+            <p className="card-text"> {
+            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+              <div class="expandHideCode">Test Card
+                <br></br><br></br>
+              </div>
+            </p>
+          </div>
+        </div>
+        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '70%' }}>
+          <img src={hairsalon} fluid={true} alt="hair-salon" />
+          <div className="card-body" style={{ height: '60px' }}>
+            <p className="card-title"><h4>Title</h4></p>
+            <p className="card-text"> {
+            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+              <div class="expandHideCode">Test Card
+                <br></br><br></br>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div className="card" style={{ height: '250px', width: '97%' }}>
+          <p className="card-text"> {
+            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+            <div class="expandHideCode" style={{ color: 'black' }} >Html
+              <br></br>
+            </div>
+            {isExpanded && (
+              <pre>
+                <code>
+                  {`<div class="flex-container">
+        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff',height: '70%'}}>
+          <img src={hairsalon} fluid={true} alt="hair-salon"  />
+          <div className="card-body" style={{height: 'auto'}}>
+            <p className="card-title"><h4>Aspect ratio</h4></p>
+            <p className="card-text"> {
+            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+              <div class="expandHideCode">Test Card
+              <br></br><br></br>
+              </div>
+             </p>
+          </div>
+        </div>
+        </div> `}
+                </code>
+              </pre>
+            )}</p>
+        </div>
+        <div className="card" style={{ height: '250px', width: '97%' }}>
+          <p className="card-text"> {
+            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+            <div class="expandHideCode" style={{ color: 'black' }}>css
+              <br></br>
+            </div>
+            {isExpanded && (
+              <pre>
+                <code>
+                  {`.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+   /*height: 100%; */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #000000;
+  overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+}
+.card-textList
+{
+  font-size: 16px;
+  color: #000000;
+    width: 100%;
+    max-width: 100%;
+}
+@media screen and (max-width: 900px) {
+.card
+{
+  width: 100%;
+}
+}`}
+                </code>
+              </pre>
+            )}</p>
+        </div>
+      </div>
     </div>
   );
 };
