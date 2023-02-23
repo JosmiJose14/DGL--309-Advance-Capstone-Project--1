@@ -46,6 +46,11 @@ export const SidebarData = [
         title: "Sub Menu",
         path: "/navigation/navSubmenu",
         icon: <IoIcons.IoIosMenu />,
+      },
+      {
+        title: "Bread crumbs",
+        path: "/navigation/navbreadcrumbs",
+        icon: <IoIcons.IoIosStopwatch/>,
       }
     ],
   },

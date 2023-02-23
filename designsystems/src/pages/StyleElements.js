@@ -150,7 +150,7 @@ export const Colors = () => {
   return (
     <div class="topPadding clsColors marginleft">
       <h2>Colors</h2>
-      <p>In a design system, different colors are used to
+      <p>In a web page, different colors are used to
         create visual hierarchy, convey meaning, and establish
         brand identity. The color selection should be guided by
         accessibility considerations, such as ensuring sufficient
@@ -210,12 +210,12 @@ export const Images = () => {
 
     <div class="topPadding clsImages marginleft">
       <h2>Images</h2>
-      <p>A design system's image style guide will typically
+      <p>An image style guide will typically
         outline specific guidelines for all of these elements,
         as well as any other relevant visual or formatting specifications,
         to ensure that images are consistent with the overall look and feel of the brand.</p>
       <div class="flex-container">
-        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '600px', overflow: 'scroll' }}>
+        <div className="card" style={{height: '600px', overflow: 'scroll' }}>
           <img src={hairsalon} fluid={true} alt="hair-salon" style={{ paddingTop: '38%' }} />
           <div className="card-body" style={{ height: '600px' }}>
             <p className="card-title"><h4>Aspect ratio</h4>The aspect ratio of an image refers to the proportional relationship between its width and height.</p>
@@ -249,7 +249,7 @@ export const Images = () => {
               )}</p>
           </div>
         </div>
-        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '600px', overflow: 'scroll' }}>
+        <div className="card" style={{height: '600px', overflow: 'scroll' }}>
           <img src={hairsalon} class="imgborderCss" fluid={true} alt="hair-salon" style={{ marginTop: '45%' }} />
           <div className="card-body" style={{ height: '600px' }}>
             <p className="card-title"><h4>Image borders and border radius</h4>An image border is a frame or line that surrounds an image. The border radius property in CSS allows you to specify the rounding of the corners of an element's border.</p>

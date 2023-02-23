@@ -8,7 +8,7 @@ export const ButtonStyles = () => {
       <h2>Buttons</h2>
       <p>Buttons in web development refer to clickable elements that perform a specific action when clicked.</p>
       <div class="flex-container">
-        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '580px', overflow: 'scroll' }}>
+        <div className="card" style={{ height: '580px', overflow: 'scroll' }}>
           <div className="card-body" style={{ height: '600px' }}>
             <p className="card-title"><h4>Submit and Reset Button</h4>A submit button is used to submit a form and is typically labeled "Submit". When clicked, it sends the data entered in the form to a server for processing.</p>
             <p>A reset button is used to reset all the form fields to their default values. It is usually labeled "Reset".</p>
@@ -68,7 +68,7 @@ export const ButtonStyles = () => {
               )}</p>
           </div>
         </div>
-        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '580px', overflow: 'scroll' }}>
+        <div className="card" style={{height: '580px', overflow: 'scroll' }}>
           <div className="card-body" style={{ height: '600px' }}>
             <p className="card-title"><h4>Inactive Button</h4>Disabled buttons are buttons that are non-interactive and do not respond to user actions. They are typically grayed out and may display a message indicating that they are disabled. This can be useful in certain scenarios where you want to prevent users from clicking a button until certain conditions are met.</p><br />
             <p className="card-text"> {

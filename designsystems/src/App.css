@@ -242,6 +242,18 @@ select {
 .carousel .control-dots .dot {
   background: #ff0038 !important;
 }
+.breadcrumb-not-active {
+  color: #cccccc;
+  }
+  
+  .breadcrumb-active {
+    color: #000000;
+  }
+  
+  .breadcrumb-arrow {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
 @media screen and (max-width: 712px) {
 

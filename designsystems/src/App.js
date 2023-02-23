@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route ,Navigate } from "react-router-d
 import { Typography, Colors,Images } from "./pages/StyleElements";
 import {Accordian, Carousels,Table,Card} from "./pages/Components";
 
-import { Navigation, NavbarSubmenu } from "./pages/Navigation";
+import { Navigation, NavbarSubmenu,BreadCrumbs } from "./pages/Navigation";
 import { Forms } from "./pages/Forms";
 import{ ButtonStyles }from "./pages/Button";
 import{ List }from "./pages/List";
@@ -28,6 +28,7 @@ function App() {
         <Route path='/style-elements/images' element={<Images/>} />
         <Route path='/navigation/navigations' element={<Navigation/>} />
         <Route path='/navigation/navSubmenu' element={<NavbarSubmenu/>}/>
+        <Route path='/navigation/navbreadcrumbs' element={<BreadCrumbs/>}/>
         <Route path='/forms' element={<Forms/>} />
         <Route path='/button' element={<ButtonStyles/>} />
         <Route path='/list' element={<List/>} />

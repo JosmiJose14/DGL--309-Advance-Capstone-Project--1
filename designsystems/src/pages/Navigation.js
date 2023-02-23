@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHamburger, faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 export const Navigation = () => {
@@ -424,6 +425,83 @@ const handleToggle = () => {
   }
  
 }`}
+                </code>
+              </pre>
+            )}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const BreadCrumbs = () => {
+  const location = useLocation();
+  const [isExpanded, setIsExpanded] = useState(true);
+  return (
+    <div className="topPadding clsNavigation marginleft">
+      <h2>BreadCrumbs</h2>
+      <p>Breadcrumbs are a navigational aid that provides users with information about their current location within a website's hierarchy. Breadcrumbs typically appear at the top of a page, just below the header, and consist of a series of clickable links that represent the path the user took to arrive at the current page.</p>
+
+      <br />
+      {/* reference:https://blog.logrocket.com/create-responsive-navbar-react-css/ */}
+    
+    <nav>
+        <Link to="/navigation/navigations"
+        className={location.pathname.startsWith("/navigation/navigations") ? "breadcrumb-active" : "breadcrumb-not-active"}
+      >
+Navigation
+      </Link>
+      <span className="breadcrumb-arrow">&gt;</span>
+      <Link to="/navigation/navbreadcrumbs"
+        className={location.pathname === "/navigation/navbreadcrumbs" ? "breadcrumb-active" : "breadcrumb-not-active"}
+      >
+        BreadCrumbs
+      </Link>
+    </nav>
+      <div class="flex-container">
+        <div className="card" style={{ height: '350px' }}>
+          <p className="card-text"> {
+            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+            <div class="expandHideCode" style={{ color: 'black' }} >react.js
+              <br></br><br></br>
+            </div>
+            {isExpanded && (
+              <pre>
+                <code>
+                  {`import { Link, useLocation } from 'react-router-dom'
+ <nav>
+  <Link to="/navigation/navigations" className={location.pathname.startsWith("/navigation/navigations") ? "breadcrumb-active" : "breadcrumb-not-active"}>
+Navigation </Link>
+      <span className="breadcrumb-arrow">&gt;</span>
+      <Link to="/navigation/navbreadcrumbs" className={location.pathname === "/navigation/navbreadcrumbs" ? "breadcrumb-active" : "breadcrumb-not-active"}>
+        BreadCrumbs</Link>
+    </nav>`}
+                </code>
+              </pre>
+            )}</p>
+        </div>
+        <div className="card" style={{ height: '350px' }}>
+          <p className="card-text"> {
+            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+            <div class="expandHideCode" style={{ color: 'black' }}>css
+              <br></br><br></br>
+            </div>
+            {isExpanded && (
+              <pre>
+                <code>
+                  {`breadcrumb-not-active {
+  color: #cccccc;
+  }
+  
+  .breadcrumb-active {
+  color: #000000;
+  }
+  
+  .breadcrumb-arrow {
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+`}
                 </code>
               </pre>
             )}</p>
