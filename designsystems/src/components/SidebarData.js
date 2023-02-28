@@ -104,6 +104,12 @@ export const SidebarData = [
         icon: <IoIcons.IoIosCard />,
         cName: "sub-nav",
       },
+      {
+        title: "Tooltip",
+        path: "/components/tooltip",
+        icon: <IoIcons.IoIosArrowDropup />,
+        cName: "sub-nav",
+      },
     ],
   }
 ];

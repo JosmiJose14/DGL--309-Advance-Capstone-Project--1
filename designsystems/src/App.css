@@ -247,12 +247,12 @@ select {
   }
   
   .breadcrumb-active {
-    color: #000000;
+  color: #000000;
   }
   
   .breadcrumb-arrow {
-    margin-left: 10px;
-    margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   }
 
 @media screen and (max-width: 712px) {

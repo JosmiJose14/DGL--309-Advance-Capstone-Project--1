@@ -91,7 +91,7 @@ export const Accordian = () => {
 
 // Demo styles, see 'Styles' section below for some notes on use.
 import 'react-accessible-accordion/dist/fancy-example.css';
-<Accordion>
+<Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
           <AccordionItem>
             <AccordionItemHeading>
                 <AccordionItemButton>
@@ -431,4 +431,33 @@ export const Card = () => {
   );
 };
 
+export const ToolTip = () => {
+  const [isExpanded, setIsExpanded] = useState(true);
+  return (
+    <div className="topPadding classCard marginleft">
+      <h2>ToolTip</h2>
+      <p>A tooltip in HTML is a small pop-up box that appears when the user hovers over an element on a web page, such as a link or an image. The tooltip usually contains additional information about the element, providing context or clarification to the user.</p>
+      <br />
+      <div style={{ width: '70%', height: 'auto',textAlign: 'center'}}>
+          <button title="Click me for more info">Learn More</button>
+      </div>
+      <div class="flex-container">        
+        <div className="card" style={{ height: 'auto', width: '100%' }}>
+          <p className="card-text"> {
+            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+            <div class="expandHideCode" style={{ color: 'black' }}>html.js
+              <br></br> <br></br>
+            </div>
+            {isExpanded && (
+              <pre>
+                <code>
+                  {`<button title="Click me for more info">Learn More</button>`}
+                </code>
+              </pre>
+            )}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 

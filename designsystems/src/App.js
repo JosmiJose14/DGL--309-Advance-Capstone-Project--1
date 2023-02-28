@@ -8,7 +8,7 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route ,Navigate } from "react-router-dom";
 import { Typography, Colors,Images } from "./pages/StyleElements";
-import {Accordian, Carousels,Table,Card} from "./pages/Components";
+import {Accordian, Carousels,Table,Card, ToolTip} from "./pages/Components";
 
 import { Navigation, NavbarSubmenu,BreadCrumbs } from "./pages/Navigation";
 import { Forms } from "./pages/Forms";
@@ -36,6 +36,7 @@ function App() {
         <Route path='/components/carousel' element={<Carousels/>} />
         <Route path='/components/table' element={<Table/>} />
         <Route path='/components/card' element={<Card/>} />
+        <Route path='/components/tooltip' element={<ToolTip/>} />
       </Routes>
       <Footer />
     </Router>
