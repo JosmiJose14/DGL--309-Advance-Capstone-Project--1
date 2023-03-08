@@ -144,7 +144,7 @@ select {
   align-items: center;
   position: relative;
   padding: 0.5rem 0rem;
-  background-color: #fff;
+  background-color: #958689;
   color: black;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
@@ -167,6 +167,7 @@ select {
   text-decoration: none;
   display: block;
   width: 100%;
+  color: black;
 }
 
 .hamburger {
@@ -193,7 +194,7 @@ select {
   position: absolute;
   top: 60px;
   right: 0;
-  background-color: #333;
+  background-color: #ffffff;
   color: #fff;
   padding: 10px;
 }

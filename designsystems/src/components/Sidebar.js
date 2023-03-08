@@ -52,6 +52,10 @@ const Sidebar = () => {
   const [sidebar, setSidebar] = useState(true);
  
   const showSidebar = () => setSidebar(!sidebar);
+  const handleButtonClick = () => {
+    window.location.href = 'http://localhost:3001/Home';
+  };
+
  
   return (
     <>
@@ -67,6 +71,7 @@ const Sidebar = () => {
           >
            Hair with Flair Pattern Library
           </h1>
+          <button onClick={handleButtonClick} id="buttons">Example Site</button>
         </Nav>
         <div style={{backgroundColor: "black"}}>
           <SidebarNav sidebar={sidebar}>
