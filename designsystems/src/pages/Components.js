@@ -459,3 +459,92 @@ export const ToolTip = () => {
   );
 };
 
+export const Section= () => {
+  const [isExpanded, setIsExpanded] = useState(true);
+  return (
+    <div className="topPadding classSection marginleft">
+      <h2>Section</h2>
+      <p>Section are created for different elements under a heading.</p>
+      <br />    
+       <div className="service-container sidepadding">
+        <div className="service-section">
+          <h3 className="headColor">Hair Examination and Remedies</h3>
+          <p title="Book our service for detailed hair examination">This service include importance of determining hair type and maintaining hair health, common hair problems and their treatments, product selection tips, and the benefits of consulting a professional. It emphasizes the need for personalized care and attention to maintain healthy, beautiful hair.</p>
+          <p><b>Hourly Rate:</b> $75 (+ plus product fee)</p>
+          <input type="button" value="Book" id="buttons"/>
+        </div>
+        <div className="service-section">
+          <h3 className="headColor">Gender-free haircuts</h3>
+          <p title="Book our service for detailed  hair examination">Our hair stylists  also offer consultations to help clients choose a gender-free haircut that best suits their needs and preferences.  Our environment welcome individuals to express themselves through their hair.</p>
+          <p><b>Hourly Rate:</b> $100 (+ plus product fee)</p>
+          <input type="button" value="Book" id="buttons"/>
+        </div>       
+      </div>
+      <div class="flex-container">
+        <div className="card" style={{ height: '250px' }}>
+          <p className="card-text"> {
+           /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+            <div class="expandHideCode" style={{ color: 'black' }} >html  <br></br><br></br>
+
+            </div>
+            {isExpanded && (
+              <pre>
+                <code>
+                  {`<div className="service-container sidepadding">
+        <div className="service-section">
+          <h3 className="headColor">Hair Examination and Remedies</h3>
+          <p title="Book our service for detailed hair examination">This service include importance of determining hair type and maintaining hair health, common hair problems and their treatments, product selection tips, and the benefits of consulting a professional. It emphasizes the need for personalized care and attention to maintain healthy, beautiful hair.</p>
+          <p><b>Hourly Rate:</b> $75 (+ plus product fee)</p>
+          <input type="button" value="Book" id="buttons"/>
+        </div>
+        <div className="service-section">
+          <h3 className="headColor">Gender-free haircuts</h3>
+          <p title="Book our service for detailed  hair examination">Our hair stylists  also offer consultations to help clients choose a gender-free haircut that best suits their needs and preferences.  Our environment welcome individuals to express themselves through their hair.</p>
+          <p><b>Hourly Rate:</b> $100 (+ plus product fee)</p>
+          <input type="button" value="Book" id="buttons"/>
+        </div>       
+      </div>`}
+                </code>
+              </pre>
+            )}</p>
+        </div>
+        <div className="card" style={{ height: '250px' }}>
+          <p className="card-text"> {
+           /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+            <div class="expandHideCode" style={{ color: 'black' }}>css
+              <br></br><br></br>
+            </div>
+            {isExpanded && (
+              <pre>
+                <code>
+                  {`.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 1% 0;
+  text-align: center;
+}
+
+/* Style for the first section */
+.service-section {
+  flex-basis: 50%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+/* Style for the second section */
+.service-section:nth-child(2),
+.service-section:nth-child(3) {
+  background-color: #e9e9e9;
+}`}
+                </code>
+              </pre>
+            )}</p>
+        </div>
+      </div>
+      </div>
+      )
+};
+

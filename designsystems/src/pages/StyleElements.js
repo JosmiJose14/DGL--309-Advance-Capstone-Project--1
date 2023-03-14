@@ -195,9 +195,9 @@ export const Colors = () => {
           <p>hex - #bc3907 </p>
           <p>rgb - RGB (188, 57, 7)</p>
         </div>
-        <div class="card" style={{ backgroundColor: '#958689', color: '#ffffff' }}>
+        <div class="card" style={{ backgroundColor: '#f4f4f4', color: '#000000' }}>
           <h3>button hover</h3>
-          <p>hex - #958689 </p>
+          <p>hex - #f4f4f4 </p>
           <p>rgb - RGB (149, 134, 137)</p>
         </div>
       </div>

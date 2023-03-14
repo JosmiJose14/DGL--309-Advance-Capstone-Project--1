@@ -42,11 +42,11 @@ export const SidebarData = [
         path: "/navigation/navigations",
         icon: <IoIcons.IoIosNavigate />,
       },
-      {
-        title: "Sub Menu",
-        path: "/navigation/navSubmenu",
-        icon: <IoIcons.IoIosMenu />,
-      },
+      // {
+      //   title: "Sub Menu",
+      //   path: "/navigation/navSubmenu",
+      //   icon: <IoIcons.IoIosMenu />,
+      // },
       {
         title: "Bread crumbs",
         path: "/navigation/navbreadcrumbs",
@@ -108,6 +108,12 @@ export const SidebarData = [
         title: "Tooltip",
         path: "/components/tooltip",
         icon: <IoIcons.IoIosArrowDropup />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Section",
+        path: "/components/section",
+        icon: <IoIcons.IoIosAlbums />,
         cName: "sub-nav",
       },
     ],

@@ -14,8 +14,8 @@ const SidebarLink = styled(Link)`
   font-size: 18px;
  
   &:hover {
-    background: #ff0038;
-    border-left: 4px solid ff0038;
+    background: #b82243;
+    border-left: 4px solid #b82243;
     cursor: pointer;
   }
   @media (max-width: 900px) {
@@ -39,7 +39,7 @@ const DropdownLink = styled(Link)`
   font-size: 18px;
  
   &:hover {
-    background: #ff0038;
+    background: #b82243;
     cursor: pointer;
   }
   @media (max-width: 900px) {

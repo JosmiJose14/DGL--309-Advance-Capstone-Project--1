@@ -105,7 +105,7 @@ const [isNavExpanded, setIsNavExpanded] = useState(false);
   align-items: center;
   position: relative;
   padding: 0.5rem 0rem;
-  background-color: #fff;
+  background-color: #f4f4f4;
   color: black;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
@@ -445,20 +445,20 @@ export const BreadCrumbs = () => {
 
       <br />
       {/* reference:https://blog.logrocket.com/create-responsive-navbar-react-css/ */}
-    
-    <nav>
-        <Link to="/navigation/navigations"
-        className={location.pathname.startsWith("/navigation/navigations") ? "breadcrumb-active" : "breadcrumb-not-active"}
-      >
-Navigation
-      </Link>
-      <span className="breadcrumb-arrow">&gt;</span>
-      <Link to="/navigation/navbreadcrumbs"
-        className={location.pathname === "/navigation/navbreadcrumbs" ? "breadcrumb-active" : "breadcrumb-not-active"}
-      >
-        BreadCrumbs
-      </Link>
-    </nav>
+
+      <nav>
+        <Link to="/navigation/navigations"
+          className={location.pathname.startsWith("/navigation/navigations") ? "breadcrumb-active" : "breadcrumb-not-active"}
+        >
+          Navigation
+        </Link>
+        <span className="breadcrumb-arrow">&gt;</span>
+        <Link to="/navigation/navbreadcrumbs"
+          className={location.pathname === "/navigation/navbreadcrumbs" ? "breadcrumb-active" : "breadcrumb-not-active"}
+        >
+          BreadCrumbs
+        </Link>
+      </nav>
       <div class="flex-container">
         <div className="card" style={{ height: '350px' }}>
           <p className="card-text"> {

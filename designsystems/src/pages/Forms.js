@@ -10,11 +10,14 @@ export const Forms = () => {
         A label is a piece of text that is used to describe or explain a text box or another UI element.
         A text box, on the other hand, is a rectangular area in which the user can enter text.</p>
       <br />
-      <div style={{ textAlign: 'center' }}> <label for="name" style={{ marginRight: '5px' }}>First Name:</label>
-        <input type="text" name="name" id="name" placeholder="ex: Josmi Jose"></input></div>
+      <div style={{ width: '70%' }}>
+        <label>
+          Name:
+          <input type="text" required placeholder='ex : josmi' />
+        </label></div>
 
       <div class="flex-container">
-        <div className="card" style={{ height: '200px' }}>
+        <div className="card" style={{ height: '150px' }}>
           <p className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div class="expandHideCode" style={{ color: 'black' }} >html  <br></br><br></br>
@@ -23,13 +26,13 @@ export const Forms = () => {
             {isExpanded && (
               <pre>
                 <code>
-                  {`<label for="name" style={{marginRight:'5px'}}>First Name:</label>
-<input type="text" name="name" id="name"></input>`}
+                  {`<label>Name:
+<input type="text" required placeholder='ex : josmi' /></label></div>`}
                 </code>
               </pre>
             )}</p>
         </div>
-        <div className="card" style={{ height: '200px' }}>
+        <div className="card" style={{ height: '150px' }}>
           <p className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div class="expandHideCode" style={{ color: 'black' }}>css
@@ -39,11 +42,14 @@ export const Forms = () => {
               <pre>
                 <code>
                   {`input {
-  padding: 3px;
-  box-shadow: 3px 3px 5px grey;
-  font-size: 14px;
-  font-weight: 600;
-  width: 300px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
 }`}
                 </code>
               </pre>
@@ -53,14 +59,16 @@ export const Forms = () => {
       <h2>Dropdown List</h2>
       <p>A dropdown list is a graphical control element, similar to a list box, that allows the user to choose one value from a predefined list of values. The user can select a value from the dropdown list by clicking on the dropdown button and then clicking on a value in the list. </p>
       <br />
-      <div style={{ textAlign: 'center' }}>
-        <label style={{ marginRight: '5px' }}>Select fruits:</label>
-        <select>
-          <option value="Select">Select</option>
-          <option value="fruit">Fruit</option>
-          <option value="vegetable">Vegetable</option>
-          <option value="meat">Meat</option>
-        </select>
+      <div style={{ width: '70%' }}>
+        <label>
+          Select Services:
+          <select required>
+            <option disabled>Select a Service</option>
+            <option value="Option 1">Service 1</option>
+            <option value="Option 2">Service 2</option>
+            <option value="Option 3">Service 3</option>
+          </select>
+        </label>
       </div>
       <div class="flex-container">
         <div className="card" style={{ height: '200px' }}>
@@ -73,8 +81,15 @@ export const Forms = () => {
             {isExpanded && (
               <pre>
                 <code>
-                  {`<label for="name" style={{marginRight:'5px'}}>First Name:</label>
-<input type="text" name="name" id="name"></input>`}
+                  {` <label>
+            Select Services:
+            <select required>
+              <option disabled>Select a Service</option>
+              <option value="Option 1">Service 1</option>
+              <option value="Option 2">Service 2</option>
+              <option value="Option 3">Service 3</option>
+            </select>
+          </label>`}
                 </code>
               </pre>
             )}</p>
@@ -90,11 +105,14 @@ export const Forms = () => {
               <pre>
                 <code>
                   {`select {
-  padding: 3px;
-  box-shadow: 3px 3px 5px grey;
-  font-size: 14px;
-  font-weight: 600;
-  width: 300px;
+   padding: 10px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   font-family: inherit;
+   font-size: 16px;
 }`}
                 </code>
               </pre>
@@ -102,9 +120,6 @@ export const Forms = () => {
         </div>
       </div>
     </div>
-
-
-
   );
 };
 
