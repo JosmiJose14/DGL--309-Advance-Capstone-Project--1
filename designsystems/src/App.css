@@ -4,7 +4,7 @@
   padding: 0;
 }
 h2{
-  padding-bottom: 1px;
+  padding-bottom: 5px;
 }
 .marginleft {
   margin-left: 280px;
@@ -24,7 +24,18 @@ h2{
 .classSection {
     margin-bottom: 2%;
 }
-table {
+.tblClass {
+  width: 70%;
+  padding: 30px;
+  border-style: outset;
+  margin: auto;
+  text-align: center;
+}
+
+.tblClass th {
+  text-align: center;
+}
+.tblStyle  {
   border: 1px solid #ccc;
   border-collapse: collapse;
   margin: 0;
@@ -33,28 +44,29 @@ table {
   table-layout: fixed;
 }
 
-table caption {
+.tblStyle  caption {
   font-size: 1.5em;
   margin: .5em 0 .75em;
 }
 
-table tr {
+.tblStyle  tr {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   padding: .35em;
 }
 
-table th,
-table td {
+.tblStyle  th,
+.tblStyle  td {
   padding: .625em;
   text-align: left;
 }
 
-table th {
+.tblStyle  th {
   font-size: .85em;
   letter-spacing: .1em;
   text-transform: uppercase;
 }
+
 
 pre {
   background-color: rgb(179, 174, 174);
@@ -88,7 +100,7 @@ pre {
 
 .card img {
   width: 100%;
-  /*height: 100%; */
+  height: fit-content;
 }
 
 .card-body {
@@ -151,15 +163,14 @@ label {
 }
 
 .navigation {
-  height: 60px;
-  width: 95%;
+  height: 70px;
+  width: 100%;
   display: flex;
   align-items: center;
   position: relative;
   padding: 0.5rem 0rem;
-  background-color: #f4f4f4;
   color: black;
-  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  background-color: #f4f4f4;
 }
 
 .navigation-menu {
@@ -174,6 +185,7 @@ label {
 .navigation-menu li {
   list-style-type: none;
   margin: 0 1rem;
+  padding: 15px;
 }
 
 .navigation-menu li a {
@@ -202,6 +214,18 @@ label {
 .hamburger:hover {
   background-color: #7e2d3f;
 }
+
+.navigation-menu li.active {
+  background-color: #d0d0d0;
+  border-radius: 9px;
+
+}
+
+.navigation-menu li:hover {
+  background-color: #d0d0d0;
+  border-radius: 20px;
+}
+
 
 .submenu {
   position: absolute;
@@ -248,14 +272,19 @@ label {
   outline: none;
 }
 
-.carousel .slider-wrapper {
-  width: 70%;
-  height: 200px;
+.carousel.carousel-slider {
+  width: 90%;
+}
+.divCarousel {
+  width: auto;
+  margin: 0 4%;
+  padding-top: '2%';
 }
 
-.carousel .control-dots .dot {
+
+/* .carousel .control-dots .dot {
   background: #ff0038 !important;
-}
+} */
 a {
   color: #000000;
 }
@@ -370,6 +399,9 @@ a {
     width: 97% !important;
     height: auto !important;
   }
+  .card img {
+    margin-top: 0% !important;
+  }
 }
 
 @media screen and (min-width: 712px) and (max-width: 900px) {
@@ -455,5 +487,8 @@ a {
   .card {
     width: 97% !important;
     height: auto !important;
+  }
+  .card img {
+    margin-top: 0% !important;
   }
 }

@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 export const Forms = () => {
-  const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding clsForms marginleft">
       <h2>Labels and textbox</h2>
@@ -16,29 +13,29 @@ export const Forms = () => {
           <input type="text" required placeholder='ex : josmi' />
         </label></div>
 
-      <div class="flex-container">
+      <div className="flex-container">
         <div className="card" style={{ height: '150px' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >html  <br></br><br></br>
+            <div className="expandHideCode" style={{ color: 'black' }} >html  <br></br><br></br>
 
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`<label>Name:
 <input type="text" required placeholder='ex : josmi' /></label></div>`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
         <div className="card" style={{ height: '150px' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }}>css
+            <div className="expandHideCode" style={{ color: 'black' }}>css
               <br></br><br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`input {
@@ -50,10 +47,16 @@ export const Forms = () => {
   box-sizing: border-box;
   font-family: inherit;
   font-size: 16px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
 }`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
       </div>
       <h2>Dropdown List</h2>
@@ -70,15 +73,15 @@ export const Forms = () => {
           </select>
         </label>
       </div>
-      <div class="flex-container">
+      <div className="flex-container">
         <div className="card" style={{ height: '200px' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >html
+            <div className="expandHideCode" style={{ color: 'black' }} >html
               <br></br><br></br>
 
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {` <label>
@@ -92,16 +95,16 @@ export const Forms = () => {
           </label>`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
         <div className="card" style={{ height: '200px' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >css
+            <div className="expandHideCode" style={{ color: 'black' }} >css
               <br></br><br></br>
 
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`select {
@@ -116,7 +119,7 @@ export const Forms = () => {
 }`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
       </div>
     </div>

@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import hairsalon from "../images/hairsalon.jpg";
+import carousel from '../images/carousel.jpg';
+import carousel1 from '../images/carousel1.jpg';
+import carousel2 from '../images/carousel2.jpg';
 import {
   Accordion,
   AccordionItem,
@@ -8,16 +11,12 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 
-// Demo styles, see 'Styles' section below for some notes on use.
+// Demo styles, see 'Styles' section below for some notes on use.className
 import 'react-accessible-accordion/dist/fancy-example.css';
-import tajMahalImage from '../images/tajmahal.jpg';
-import tagmahalmoonImage from '../images/tajmahalmoon.jpeg';
-import tajMahalfullImage from '../images/tajmahalfull.jpg';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader  
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 // reference- https://www.npmjs.com/package/react-accessible-accordion
 export const Accordian = () => {
-  const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding classAccordian marginleft ">
       <h2 style={{ paddingTop: 20 }}>Accordian</h2>
@@ -54,31 +53,31 @@ export const Accordian = () => {
           </AccordionItemPanel>
         </AccordionItem>
       </Accordion>
-      <div class="flex-container">
+      <div className="flex-container">
         <div className="card" style={{ height: '150px', width: '100%' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >Command Prompt
+            <div className="expandHideCode" style={{ color: 'black' }} >Command Prompt
               <br></br>
               {/* <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} /> */}
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`npm install --save react-accessible-accordion`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
         <div className="card" style={{ height: '280px', width: '100%' }}>
-          <div class="expandHideCode" style={{ color: 'black' }} >react.js
+          <div className="expandHideCode" style={{ color: 'black' }} >react.js
             <br></br></div>
-          <p className="card-text"> {
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
 
             {/* <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} /> */}
 
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`import {
@@ -124,7 +123,7 @@ import 'react-accessible-accordion/dist/fancy-example.css';
     </Accordion>`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
       </div>
     </div>
@@ -132,68 +131,64 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 };
 //reference- // https://www.javatpoint.com/carousel-in-react
 export const Carousels = () => {
-  const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding classCarousel marginleft">
       <h2>Carousel</h2>
       <p>A carousel in React is a component that displays a rotating set of items, typically images, in a circular fashion. There are many pre-built carousel components available for React that you can use, or you can build your own from scratch.</p>
       <br />
-      <div style={{ width: '70%', height: '200px' }}>
+      <div className="divCarousel">
         <Carousel showThumbs={false}>
           <div>
-            <img src={tajMahalfullImage} style={{ width: "50%", height: "50%" }} />
-
+            <img src={carousel} style={{ width: "60%", height: "50%" }} />
           </div>
           <div>
-            <img src={tajMahalImage} style={{ width: "50%", height: "50%" }} />
-
+            <img src={carousel1} style={{ width: "60%", height: "50%" }} />
           </div>
           <div>
-            <img src={tagmahalmoonImage} style={{ width: "50%", height: "50%" }} />
-
+            <img src={carousel2} style={{ width: "60%", height: "50%" }} />
           </div>
         </Carousel>
       </div>
-      <div class="flex-container">
-        <div className="card" style={{ height: '140px', width: '100%' }}>
-          <p className="card-text"> {
+      <div className="flex-container">
+        <div className="card" style={{ height: '140px' }}>
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >Command Prompt
+            <div className="expandHideCode" style={{ color: 'black' }} >Command Prompt
               <br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`npm install  add react-responsive-carousel  `}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
-        <div className="card" style={{ height: '275px', width: '100%' }}>
-          <p className="card-text"> {
+        <div className="card" style={{ height: '200px' }}>
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }}>react.js
+            <div className="expandHideCode" style={{ color: 'black' }}>react.js
               <br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader  
 import { Carousel } from 'react-responsive-carousel';
 <Carousel showThumbs={false}>
 <div>
-<img src={tajMahalfullImage} style={{ width: "50%", height: "50%" }} />
+  <img src={carousel} style={{ width: "60%", height: "50%" }} />
 </div>
 <div>
-<img src={tajMahalImage} style={{ width: "50%", height: "50%" }} />
+  <img src={carousel1} style={{ width: "60%", height: "50%" }} />
 </div>
 <div>
-<img src={tagmahalmoonImage} style={{ width: "50%", height: "50%" }} />
+  <img src={carousel2} style={{ width: "60%", height: "50%" }} />
 </div>
 </Carousel>`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
       </div>
     </div>
@@ -201,179 +196,194 @@ import { Carousel } from 'react-responsive-carousel';
 };
 
 export const Table = () => {
-  const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding classTable marginleft">
       <h2>Table</h2>
       <p>a table is a way to display data in rows and columns. It allows you to organize and present information in a structured format, similar to a spreadsheet.</p>
       <br />
-      <table style={{ width: '97%' }}>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Gender</th>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>19</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Rekha</td>
-          <td>19</td>
-          <td>Female</td>
-        </tr>
-      </table>
-      <div class="flex-container">
-        <div className="card" style={{ height: '250px', width: '97%' }}>
-          <p className="card-text"> {
+      <table className="tblClass" style={{ width: '97%' }}>
+              <tbody>
+                <tr>
+                  <th>Tuesday</th>
+                  <td>9am - 5pm</td>
+                </tr>
+                <tr>
+                  <th>Wednesday</th>
+                  <td>9am - 5pm</td>
+                </tr>
+                <tr>
+                  <th>Thursday</th>
+                  <td>9am - 5pm</td>
+                </tr>
+                <tr>
+                  <th>Friday</th>
+                  <td>9am - 5pm</td>
+                </tr>
+                <tr>
+                  <th>Saturday</th>
+                  <td>9am - 5pm</td>
+                </tr>
+                <tr>
+                  <th>Sunday</th>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <th>Monday</th>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <td colSpan={'2'}>
+                    <small><em>All statutory holidays are closed. and tuesdays following a
+                      holiday monday.</em></small>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+      <div className="flex-container">
+        <div className="card" style={{ height: '350px'}}>
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >Html
+            <div className="expandHideCode" style={{ color: 'black' }} >Html
               <br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
-                  {` <table>
-<tr>
-  <th>Name</th>
-  <th>Age</th>
-  <th>Gender</th>
-</tr>
-<tr>
-  <td>Anom</td>
-  <td>19</td>
-  <td>Male</td>
-</tr>
-<tr>
-  <td>Rekha</td>
-  <td>19</td>
-  <td>Female</td>
-</tr>
-<tr>
-  <td>Subham</td>
-  <td>25</td>
-  <td>Male</td>
-</tr>
-</table> `}
+                  {`<table>
+              <tbody>
+                <tr>
+                  <th>Tuesday</th>
+                  <td>9am - 5pm</td>
+                </tr>
+                <tr>
+                  <th>Wednesday</th>
+                  <td>9am - 5pm</td>
+                </tr>
+                <tr>
+                  <th>Thursday</th>
+                  <td>9am - 5pm</td>
+                </tr>
+                <tr>
+                  <th>Friday</th>
+                  <td>9am - 5pm</td>
+                </tr>
+                <tr>
+                  <th>Saturday</th>
+                  <td>9am - 5pm</td>
+                </tr>
+                <tr>
+                  <th>Sunday</th>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <th>Monday</th>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <td colSpan={'2'}>
+                    <small><em>All statutory holidays are closed. and tuesdays following a
+                      holiday monday.</em></small>
+                  </td>
+                </tr>
+              </tbody>
+            </table> `}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
-        <div className="card" style={{ height: '250px', width: '97%' }}>
-          <p className="card-text"> {
+        <div className="card" style={{ height: '350px' }}>
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }}>css
+            <div className="expandHideCode" style={{ color: 'black' }}>css
               <br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`table {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  table-layout: fixed;
+  width: 70%;
+  padding: 30px;
+  border-style: outset;
+  margin: auto;
+  text-align: center;
 }
 
-table caption {
-  font-size: 1.5em;
-  margin: .5em 0 .75em;
-}
-
-table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: .35em;
-}
-
-table th,
-table td {
-  padding: .625em;
-  text-align: left;
-}
-
-table th {
-  font-size: .85em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
+th {
+  text-align: center;
 }`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
       </div>
     </div>
   );
 };
 export const Card = () => {
-  const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding classCard marginleft">
       <h2>Card</h2>
       <p>Cards are often used to group related content together, and are frequently found in responsive web design because they can adapt to different screen sizes and orientations. They can be used to display a variety of content, such as articles, blog posts, products, images, and more.</p>
       <br />
-      <div class="flex-container">
+      <div className="flex-container">
         <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '350px',width:'30%' }}>
-          <img src={hairsalon} fluid={true} alt="hair-salon" />
+          <img src={hairsalon}  alt="hair-salon" />
           <div className="card-body" style={{ height: '60px' }}>
-            <p className="card-title"><h4>Title</h4></p>
-            <p className="card-text"> {
+            <p className="card-title"><b>Title</b></p>
+            <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-              <div class="expandHideCode">Test Card
+              <div className="expandHideCode">Test Card
               </div>
-            </p>
+            </div>
           </div>
         </div>
         <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '350px',width:'30%'  }}>
-          <img src={hairsalon} fluid={true} alt="hair-salon" />
+          <img src={hairsalon}  alt="hair-salon" />
           <div className="card-body" style={{ height: '60px' }}>
-            <p className="card-title"><h4>Title</h4></p>
-            <p className="card-text"> {
+            <p className="card-title"><b>Title</b></p>
+            <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-              <div class="expandHideCode">Test Card
+              <div className="expandHideCode">Test Card
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="flex-container">
+      <div className="flex-container">
         <div className="card" style={{ height: '250px', width: '43%' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >Html
+            <div className="expandHideCode" style={{ color: 'black' }} >Html
               <br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
-                  {`<div class="flex-container">
+                  {`<div className="flex-container">
         <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff',height: '70%'}}>
           <img src={hairsalon} fluid={true} alt="hair-salon"  />
           <div className="card-body" style={{height: 'auto'}}>
             <p className="card-title"><h4>Aspect ratio</h4></p>
-            <p className="card-text"> {
+            <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-              <div class="expandHideCode">Test Card
+              <div className="expandHideCode">Test Card
               <br></br><br></br>
               </div>
-             </p>
+             </div>
           </div>
         </div>
         </div> `}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
         <div className="card" style={{ height: '250px', width: '43%' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }}>css
+            <div className="expandHideCode" style={{ color: 'black' }}>css
               <br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`.card {
@@ -422,7 +432,7 @@ export const Card = () => {
 }`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
       </div>
     </div>
@@ -430,29 +440,28 @@ export const Card = () => {
 };
 
 export const ToolTip = () => {
-  const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding classCard marginleft">
       <h2>ToolTip</h2>
       <p>A tooltip in HTML is a small pop-up box that appears when the user hovers over an element on a web page, such as a link or an image. The tooltip usually contains additional information about the element, providing context or clarification to the user.</p>
       <br />
       <div style={{ width: '70%', height: 'auto',textAlign: 'center'}}>
-          <button title="Click me for more info">Learn More</button>
+      <label title="Click me for more info">Click here see the tooltip</label>
       </div>
-      <div class="flex-container">        
+      <div className="flex-container">        
         <div className="card" style={{ height: 'auto', width: '100%' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }}>html.js
+            <div className="expandHideCode" style={{ color: 'black' }}>html.js
               <br></br> <br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
-                  {`<button title="Click me for more info">Learn More</button>`}
+                  {`<label title="Click me for more info">Click here see the tooltip</label>`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
       </div>
     </div>
@@ -460,7 +469,6 @@ export const ToolTip = () => {
 };
 
 export const Section= () => {
-  const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding classSection marginleft">
       <h2>Section</h2>
@@ -480,14 +488,14 @@ export const Section= () => {
           <input type="button" value="Book" id="buttons"/>
         </div>       
       </div>
-      <div class="flex-container">
+      <div className="flex-container">
         <div className="card" style={{ height: '250px' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >html  <br></br><br></br>
+            <div className="expandHideCode" style={{ color: 'black' }} >html  <br></br><br></br>
 
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`<div className="service-container sidepadding">
@@ -506,15 +514,15 @@ export const Section= () => {
       </div>`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
         <div className="card" style={{ height: '250px' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }}>css
+            <div className="expandHideCode" style={{ color: 'black' }}>css
               <br></br><br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`.service-container {
@@ -541,7 +549,7 @@ export const Section= () => {
 }`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
       </div>
       </div>

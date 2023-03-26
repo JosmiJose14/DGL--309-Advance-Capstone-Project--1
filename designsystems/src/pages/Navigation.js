@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useMatch, useResolvedPath, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHamburger, faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faHamburger } from "@fortawesome/free-solid-svg-icons";
 export const Navigation = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding clsNavigation marginleft">
       <h2>Navbar</h2>
@@ -13,6 +12,53 @@ export const Navigation = () => {
       <br />
       {/* reference:https://blog.logrocket.com/create-responsive-navbar-react-css/ */}
       <nav className="navigation">
+        <h1 className='headColor sidepadding'>Hair with Flair</h1>
+        <button
+          className="hamburger"
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}>
+          <FontAwesomeIcon icon={faHamburger} />
+        </button>
+        <div
+          className={
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+          }>
+          <div
+            className="navigation-menu">
+            <ul>
+              <CustomLink to="/" onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}>Home</CustomLink>
+              <CustomLink to="/" onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}>Services</CustomLink>
+              <CustomLink to="/" onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}>Appointments</CustomLink>
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+
+      <div className="flex-container">
+        <div className="card" style={{ height: '500px' }}>
+          <div className="card-text"> {
+            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
+            <div className="expandHideCode" style={{ color: 'black' }} >react.js
+              <br></br><br></br>
+            </div>
+            {
+              <pre>
+                <code>
+                  {`import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHamburger } from "@fortawesome/free-solid-svg-icons";
+
+const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+<nav className="navigation">
+        <h1 className='headColor sidepadding'>Hair with Flair</h1>
         <button
           className="hamburger"
           onClick={() => {
@@ -28,103 +74,65 @@ export const Navigation = () => {
           <div
             className="navigation-menu">
             <ul>
-              <li>
-                <a href="">Home</a>
-              </li>
-              <li>
-                <a href="">About</a>
-              </li>
-              <li>
-                <a href="">Contact</a>
-              </li>
+              <CustomLink to="/Home"  onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}>Home</CustomLink>
+              <CustomLink to="/Service"  onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}>Services</CustomLink>
+              <CustomLink to="/Appointments" onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}>Appointments</CustomLink>
             </ul>
           </div>
         </div>
-      </nav>
-      <div class="flex-container">
-        <div className="card" style={{ height: '500px' }}>
-          <p className="card-text"> {
-            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >react.js
-              <br></br><br></br>
-            </div>
-            {isExpanded && (
-              <pre>
-                <code>
-                  {`import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHamburger } from "@fortawesome/free-solid-svg-icons";
-
-const [isNavExpanded, setIsNavExpanded] = useState(false);
-
-<nav className="navigation">
-  <button
-    className="hamburger"
-    onClick={() => {
-      setIsNavExpanded(!isNavExpanded);
-    }}>
-    <FontAwesomeIcon icon={faHamburger} />
-  </button>
-  <div
-    className={
-      isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-    }
-  >
-    <div
-      className="navigation-menu">
-      <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>`}
+      </nav>`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
         <div className="card" style={{ height: '500px' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }}>css
+            <div className="expandHideCode" style={{ color: 'black' }}>css
               <br></br><br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`.navigation {
-  height: 60px;
+  height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
   position: relative;
   padding: 0.5rem 0rem;
-  background-color: #f4f4f4;
   color: black;
-  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  background-color: #f4f4f4;
 }
+
 .navigation-menu {
   margin-left: auto;
 }
+
 .navigation-menu ul {
   display: flex;
   padding: 0;
 }
+
 .navigation-menu li {
   list-style-type: none;
   margin: 0 1rem;
+  padding: 15px;
 }
+
 .navigation-menu li a {
   text-decoration: none;
   display: block;
   width: 100%;
+  color: black;
 }
+
 .hamburger {
   border: 0;
   height: 40px;
@@ -140,8 +148,20 @@ const [isNavExpanded, setIsNavExpanded] = useState(false);
   transform: translateY(-50%);
   display: none;
 }
+
 .hamburger:hover {
   background-color: #7e2d3f;
+}
+
+.navigation-menu li.active {
+  background-color: #d0d0d0;
+  border-radius: 9px;
+
+}
+
+.navigation-menu li:hover {
+  background-color: #d0d0d0;
+  border-radius: 20px;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -182,7 +202,7 @@ const [isNavExpanded, setIsNavExpanded] = useState(false);
 }`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
       </div>
     </div>
@@ -190,7 +210,6 @@ const [isNavExpanded, setIsNavExpanded] = useState(false);
 };
 
 export const NavbarSubmenu = () => {
-  const [isExpanded, setIsExpanded] = useState(true);
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -245,14 +264,14 @@ export const NavbarSubmenu = () => {
           </div>
         </div>
       </nav>
-      <div class="flex-container">
+      <div className="flex-container">
         <div className="card" style={{ height: '500px' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >react.js
+            <div className="expandHideCode" style={{ color: 'black' }} >react.js
               <br></br><br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -309,15 +328,15 @@ const handleToggle = () => {
       </nav>`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
         <div className="card" style={{ height: '500px' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >css
+            <div className="expandHideCode" style={{ color: 'black' }} >css
               <br></br><br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`
@@ -427,7 +446,7 @@ const handleToggle = () => {
 }`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
       </div>
     </div>
@@ -437,7 +456,6 @@ const handleToggle = () => {
 //reference-https://www.makeuseof.com/create-breadcrumbs-in-reactjs/
 export const BreadCrumbs = () => {
   const location = useLocation();
-  const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="topPadding clsNavigation marginleft">
       <h2>BreadCrumbs</h2>
@@ -459,14 +477,14 @@ export const BreadCrumbs = () => {
           BreadCrumbs
         </Link>
       </nav>
-      <div class="flex-container">
+      <div className="flex-container">
         <div className="card" style={{ height: '350px' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }} >react.js
+            <div className="expandHideCode" style={{ color: 'black' }} >react.js
               <br></br><br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
                   {`import { Link, useLocation } from 'react-router-dom'
@@ -479,25 +497,20 @@ Navigation </Link>
     </nav>`}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
         <div className="card" style={{ height: '350px' }}>
-          <p className="card-text"> {
+          <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
-            <div class="expandHideCode" style={{ color: 'black' }}>css
+            <div className="expandHideCode" style={{ color: 'black' }}>css
               <br></br><br></br>
             </div>
-            {isExpanded && (
+            {
               <pre>
                 <code>
-                  {`breadcrumb-not-active {
-  color: #cccccc;
-  }
-  
-  .breadcrumb-active {
-  color: #000000;
-  }
-  
+                  {`.breadcrumb-active {
+  color: #b82243;
+}
   .breadcrumb-arrow {
   margin-left: 10px;
   margin-right: 10px;
@@ -505,9 +518,22 @@ Navigation </Link>
 `}
                 </code>
               </pre>
-            )}</p>
+            }</div>
         </div>
       </div>
     </div>
   );
 };
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  )
+}
