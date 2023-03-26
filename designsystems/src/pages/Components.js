@@ -13,7 +13,7 @@ import {
 
 // Demo styles, see 'Styles' section below for some notes on use.className
 import 'react-accessible-accordion/dist/fancy-example.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 // reference- https://www.npmjs.com/package/react-accessible-accordion
 export const Accordian = () => {
@@ -202,45 +202,45 @@ export const Table = () => {
       <p>a table is a way to display data in rows and columns. It allows you to organize and present information in a structured format, similar to a spreadsheet.</p>
       <br />
       <table className="tblClass" style={{ width: '97%' }}>
-              <tbody>
-                <tr>
-                  <th>Tuesday</th>
-                  <td>9am - 5pm</td>
-                </tr>
-                <tr>
-                  <th>Wednesday</th>
-                  <td>9am - 5pm</td>
-                </tr>
-                <tr>
-                  <th>Thursday</th>
-                  <td>9am - 5pm</td>
-                </tr>
-                <tr>
-                  <th>Friday</th>
-                  <td>9am - 5pm</td>
-                </tr>
-                <tr>
-                  <th>Saturday</th>
-                  <td>9am - 5pm</td>
-                </tr>
-                <tr>
-                  <th>Sunday</th>
-                  <td>Closed</td>
-                </tr>
-                <tr>
-                  <th>Monday</th>
-                  <td>Closed</td>
-                </tr>
-                <tr>
-                  <td colSpan={'2'}>
-                    <small><em>All statutory holidays are closed. and tuesdays following a
-                      holiday monday.</em></small>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+        <tbody>
+          <tr>
+            <th>Tuesday</th>
+            <td>9am - 5pm</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td>9am - 5pm</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td>9am - 5pm</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td>9am - 5pm</td>
+          </tr>
+          <tr>
+            <th>Saturday</th>
+            <td>9am - 5pm</td>
+          </tr>
+          <tr>
+            <th>Sunday</th>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <th>Monday</th>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <td colSpan={'2'}>
+              <small><em>All statutory holidays are closed. and tuesdays following a
+                holiday monday.</em></small>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <div className="flex-container">
-        <div className="card" style={{ height: '350px'}}>
+        <div className="card" style={{ height: '350px' }}>
           <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div className="expandHideCode" style={{ color: 'black' }} >Html
@@ -326,8 +326,8 @@ export const Card = () => {
       <p>Cards are often used to group related content together, and are frequently found in responsive web design because they can adapt to different screen sizes and orientations. They can be used to display a variety of content, such as articles, blog posts, products, images, and more.</p>
       <br />
       <div className="flex-container">
-        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '350px',width:'30%' }}>
-          <img src={hairsalon}  alt="hair-salon" />
+        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '350px', width: '30%' }}>
+          <img src={hairsalon} alt="hair-salon" />
           <div className="card-body" style={{ height: '60px' }}>
             <p className="card-title"><b>Title</b></p>
             <div className="card-text"> {
@@ -337,8 +337,8 @@ export const Card = () => {
             </div>
           </div>
         </div>
-        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '350px',width:'30%'  }}>
-          <img src={hairsalon}  alt="hair-salon" />
+        <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '350px', width: '30%' }}>
+          <img src={hairsalon} alt="hair-salon" />
           <div className="card-body" style={{ height: '60px' }}>
             <p className="card-title"><b>Title</b></p>
             <div className="card-text"> {
@@ -445,10 +445,10 @@ export const ToolTip = () => {
       <h2>ToolTip</h2>
       <p>A tooltip in HTML is a small pop-up box that appears when the user hovers over an element on a web page, such as a link or an image. The tooltip usually contains additional information about the element, providing context or clarification to the user.</p>
       <br />
-      <div style={{ width: '70%', height: 'auto',textAlign: 'center'}}>
-      <label title="Click me for more info">Click here see the tooltip</label>
+      <div style={{ width: '70%', height: 'auto', textAlign: 'center' }}>
+        <label title="Click me for more info">Click here see the tooltip</label>
       </div>
-      <div className="flex-container">        
+      <div className="flex-container">
         <div className="card" style={{ height: 'auto', width: '100%' }}>
           <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
@@ -468,25 +468,25 @@ export const ToolTip = () => {
   );
 };
 
-export const Section= () => {
+export const Section = () => {
   return (
     <div className="topPadding classSection marginleft">
       <h2>Section</h2>
       <p>Section are created for different elements under a heading.</p>
-      <br />    
-       <div className="service-container sidepadding">
+      <br />
+      <div className="service-container sidepadding">
         <div className="service-section">
           <h3 className="headColor">Hair Examination and Remedies</h3>
           <p title="Book our service for detailed hair examination">This service include importance of determining hair type and maintaining hair health, common hair problems and their treatments, product selection tips, and the benefits of consulting a professional. It emphasizes the need for personalized care and attention to maintain healthy, beautiful hair.</p>
           <p><b>Hourly Rate:</b> $75 (+ plus product fee)</p>
-          <input type="button" value="Book" id="buttons"/>
+          <input type="button" value="Book" id="buttons" />
         </div>
         <div className="service-section">
           <h3 className="headColor">Gender-free haircuts</h3>
           <p title="Book our service for detailed  hair examination">Our hair stylists  also offer consultations to help clients choose a gender-free haircut that best suits their needs and preferences.  Our environment welcome individuals to express themselves through their hair.</p>
           <p><b>Hourly Rate:</b> $100 (+ plus product fee)</p>
-          <input type="button" value="Book" id="buttons"/>
-        </div>       
+          <input type="button" value="Book" id="buttons" />
+        </div>
       </div>
       <div className="flex-container">
         <div className="card" style={{ height: '250px' }}>
@@ -552,7 +552,7 @@ export const Section= () => {
             }</div>
         </div>
       </div>
-      </div>
-      )
+    </div>
+  )
 };
 

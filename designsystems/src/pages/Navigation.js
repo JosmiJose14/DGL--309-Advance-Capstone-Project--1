@@ -131,6 +131,7 @@ const [isNavExpanded, setIsNavExpanded] = useState(false);
   display: block;
   width: 100%;
   color: black;
+  font-weight: bold;
 }
 
 .hamburger {
@@ -464,7 +465,7 @@ export const BreadCrumbs = () => {
       <br />
       {/* reference:https://blog.logrocket.com/create-responsive-navbar-react-css/ */}
 
-      <nav>
+      <nav className="breadCrumb">
         <Link to="/navigation/navigations"
           className={location.pathname.startsWith("/navigation/navigations") ? "breadcrumb-active" : "breadcrumb-not-active"}
         >

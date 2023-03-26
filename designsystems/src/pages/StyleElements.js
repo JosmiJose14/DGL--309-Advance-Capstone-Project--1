@@ -211,12 +211,12 @@ export const Images = () => {
         as well as any other relevant visual or formatting specifications,
         to ensure that images are consistent with the overall look and feel of the brand.</p>
       <div className="flex-container">
-        <div className="card" style={{height: '620px' }}>
-         <img src={hairsalon} alt="hair-salon" style={{ marginTop: '44%' }} />
+        <div className="card" style={{ height: '620px' }}>
+          <img src={hairsalon} alt="hair-salon" style={{ marginTop: '44%' }} />
           <div className="card-body">
-            <p className="card-title"><b>Aspect ratio</b><br/>The aspect ratio of an image refers to the proportional relationship between its width and height.</p>
-            <div className="card-text"> 
-            {/* https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */ }
+            <p className="card-title"><b>Aspect ratio</b><br />The aspect ratio of an image refers to the proportional relationship between its width and height.</p>
+            <div className="card-text">
+              {/* https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
               <div className="expandHideCode">react.js
                 <br></br><br></br>
               </div>
@@ -227,7 +227,7 @@ export const Images = () => {
 <img src={hairsalon} fluid={true} alt="hair-salon" />`}
                   </code>
                 </pre>
-}</div>
+              }</div>
             <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
               <div className="expandHideCode">css
@@ -245,10 +245,10 @@ export const Images = () => {
               }</div>
           </div>
         </div>
-        <div className="card" style={{height: '620px' }}>
-         <img src={hairsalon} className="imgborderCss" alt="hair-salon" style={{ marginTop: '50%' }} />
+        <div className="card" style={{ height: '620px' }}>
+          <img src={hairsalon} className="imgborderCss" alt="hair-salon" style={{ marginTop: '50%' }} />
           <div className="card-body">
-            <p className="card-title"><b>Image borders and border radius</b><br/>An image border is a frame or line that surrounds an image. The border radius property in CSS allows you to specify the rounding of the corners of an element's border.</p>
+            <p className="card-title"><b>Image borders and border radius</b><br />An image border is a frame or line that surrounds an image. The border radius property in CSS allows you to specify the rounding of the corners of an element's border.</p>
             <div className="card-text"> {
             /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
               <div className="expandHideCode">react.js
