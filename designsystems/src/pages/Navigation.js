@@ -140,7 +140,7 @@ const [isNavExpanded, setIsNavExpanded] = useState(false);
   width: 40px;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: #b82243;
+  background-color: #A01313;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
@@ -374,7 +374,7 @@ const handleToggle = () => {
   width: 40px;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: #b82243;
+  background-color: #A01313;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
@@ -492,10 +492,10 @@ export const BreadCrumbs = () => {
  <nav>
   <Link to="/navigation/navigations" className={location.pathname.startsWith("/navigation/navigations") ? "breadcrumb-active" : "breadcrumb-not-active"}>
 Navigation </Link>
-      <span className="breadcrumb-arrow">&gt;</span>
-      <Link to="/navigation/navbreadcrumbs" className={location.pathname === "/navigation/navbreadcrumbs" ? "breadcrumb-active" : "breadcrumb-not-active"}>
-        BreadCrumbs</Link>
-    </nav>`}
+ <span className="breadcrumb-arrow">&gt;</span>
+ <Link to="/navigation/navbreadcrumbs" className={location.pathname === "/navigation/navbreadcrumbs" ? "breadcrumb-active" : "breadcrumb-not-active"}>
+BreadCrumbs</Link>
+</nav>`}
                 </code>
               </pre>
             }</div>
@@ -510,7 +510,7 @@ Navigation </Link>
               <pre>
                 <code>
                   {`.breadcrumb-active {
-  color: #b82243;
+  color: #A01313;
 }
   .breadcrumb-arrow {
   margin-left: 10px;

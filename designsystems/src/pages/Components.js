@@ -139,13 +139,13 @@ export const Carousels = () => {
       <div className="divCarousel">
         <Carousel showThumbs={false}>
           <div>
-            <img src={carousel} style={{ width: "60%", height: "50%" }} />
+            <img src={carousel} style={{ width: "80%", height: "50%" }} alt="hair with flair" />
           </div>
           <div>
-            <img src={carousel1} style={{ width: "60%", height: "50%" }} />
+            <img src={carousel1} style={{ width: "80%", height: "50%" }}  alt="hair with flair" />
           </div>
           <div>
-            <img src={carousel2} style={{ width: "60%", height: "50%" }} />
+            <img src={carousel2} style={{ width: "80%", height: "50%" }}  alt="hair with flair" />
           </div>
         </Carousel>
       </div>
@@ -177,13 +177,13 @@ export const Carousels = () => {
 import { Carousel } from 'react-responsive-carousel';
 <Carousel showThumbs={false}>
 <div>
-  <img src={carousel} style={{ width: "60%", height: "50%" }} />
+  <img src={carousel} style={{ width: "80%", height: "50%" }} />
 </div>
 <div>
-  <img src={carousel1} style={{ width: "60%", height: "50%" }} />
+  <img src={carousel1} style={{ width: "80%", height: "50%" }} />
 </div>
 <div>
-  <img src={carousel2} style={{ width: "60%", height: "50%" }} />
+  <img src={carousel2} style={{ width: "80%", height: "50%" }} />
 </div>
 </Carousel>`}
                 </code>
@@ -327,7 +327,7 @@ export const Card = () => {
       <br />
       <div className="flex-container">
         <div className="card" style={{ backgroundColor: '#000000', color: '#ffffff', height: '350px', width: '30%' }}>
-          <img src={hairsalon} alt="hair-salon" />
+          <img src={hairsalon} alt="hair-salon"   />
           <div className="card-body" style={{ height: '60px' }}>
             <p className="card-title"><b>Title</b></p>
             <div className="card-text"> {
@@ -478,13 +478,13 @@ export const Section = () => {
         <div className="service-section">
           <h3 className="headColor">Hair Examination and Remedies</h3>
           <p title="Book our service for detailed hair examination">This service include importance of determining hair type and maintaining hair health, common hair problems and their treatments, product selection tips, and the benefits of consulting a professional. It emphasizes the need for personalized care and attention to maintain healthy, beautiful hair.</p>
-          <p><b>Hourly Rate:</b> $75 (+ plus product fee)</p>
+          <br/><p><b>Hourly Rate:</b> $75 (+ plus product fee)</p>
           <input type="button" value="Book" id="buttons" />
         </div>
         <div className="service-section">
           <h3 className="headColor">Gender-free haircuts</h3>
           <p title="Book our service for detailed  hair examination">Our hair stylists  also offer consultations to help clients choose a gender-free haircut that best suits their needs and preferences.  Our environment welcome individuals to express themselves through their hair.</p>
-          <p><b>Hourly Rate:</b> $100 (+ plus product fee)</p>
+          <br/><p><b>Hourly Rate:</b> $100 (+ plus product fee)</p>
           <input type="button" value="Book" id="buttons" />
         </div>
       </div>
@@ -502,13 +502,13 @@ export const Section = () => {
         <div className="service-section">
           <h3 className="headColor">Hair Examination and Remedies</h3>
           <p title="Book our service for detailed hair examination">This service include importance of determining hair type and maintaining hair health, common hair problems and their treatments, product selection tips, and the benefits of consulting a professional. It emphasizes the need for personalized care and attention to maintain healthy, beautiful hair.</p>
-          <p><b>Hourly Rate:</b> $75 (+ plus product fee)</p>
+          <p><b>Hourly Rate:</b> $75 (+ plus product fee)</p><br/>
           <input type="button" value="Book" id="buttons"/>
         </div>
         <div className="service-section">
           <h3 className="headColor">Gender-free haircuts</h3>
           <p title="Book our service for detailed  hair examination">Our hair stylists  also offer consultations to help clients choose a gender-free haircut that best suits their needs and preferences.  Our environment welcome individuals to express themselves through their hair.</p>
-          <p><b>Hourly Rate:</b> $100 (+ plus product fee)</p>
+          <p><b>Hourly Rate:</b> $100 (+ plus product fee)</p><br/>
           <input type="button" value="Book" id="buttons"/>
         </div>       
       </div>`}

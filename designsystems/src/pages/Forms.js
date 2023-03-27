@@ -2,7 +2,7 @@ import React from "react";
 export const Forms = () => {
   return (
     <div className="topPadding clsForms marginleft">
-      <h2>Labels and textbox</h2>
+      <h2>Labels and textbox </h2>
       <p>Labels and text boxes are elements commonly used in user interfaces to collect information from users.
         A label is a piece of text that is used to describe or explain a text box or another UI element.
         A text box, on the other hand, is a rectangular area in which the user can enter text.</p>

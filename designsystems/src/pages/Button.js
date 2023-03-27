@@ -19,7 +19,7 @@ export const ButtonStyles = () => {
                 <pre>
                   <code>
                     {`<input type="submit" value="Submit" id="buttons"/>
-                     <input type="reset" value="Reset" id="buttons" />`}
+<input type="reset" value="Reset" id="buttons" />`}
                   </code>
                 </pre>
               }</div>
@@ -50,7 +50,8 @@ export const ButtonStyles = () => {
 }
 #buttons:hover
 {
-  background-color: #958689;
+  background-color: #f4f4f4;
+  color: black;
   outline: none;
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
   -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);

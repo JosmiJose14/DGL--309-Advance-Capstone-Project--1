@@ -201,7 +201,7 @@ label {
   width: 40px;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: #b82243;
+  background-color: #A01313;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
@@ -259,7 +259,8 @@ label {
 }
 
 #buttons:hover {
-  background-color: #958689;
+  background-color: #f4f4f4;
+  color: black;
   outline: none;
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
@@ -277,6 +278,7 @@ label {
   width: auto;
   margin: 0 4%;
   padding-top: 2%;
+  margin-bottom: 5%;
 }
 
 /* .carousel .control-dots .dot {
@@ -289,7 +291,7 @@ a {
   font-weight: bold;
 }
 .breadcrumb-active {
-  color: #b82243;
+  color: #A01313;
 }
 .breadcrumb-arrow {
   margin-left: 10px;
@@ -301,7 +303,6 @@ a {
   justify-content: center;
   align-items: stretch;
   margin: 1% 0;
-  text-align: center;
 }
 
 /* Style for the first section */

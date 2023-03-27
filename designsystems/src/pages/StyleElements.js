@@ -162,9 +162,9 @@ export const Colors = () => {
           <p>hex - #000000 </p>
           <p>rgb - RGB (0, 0, 0)</p>
         </div>
-        <div className="card" style={{ backgroundColor: '#b82243', color: '#ffffff' }}>
+        <div className="card" style={{ backgroundColor: '#A01313', color: '#ffffff' }}>
           <h3>header text color</h3>
-          <p>hex - #b82243 </p>
+          <p>hex - #A01313 </p>
           <p>rgb - RGB (184, 34, 67)</p>
         </div>
         <div className="card" style={{ backgroundColor: '#ffffff', color: '#000000' }}>
@@ -187,9 +187,9 @@ export const Colors = () => {
           <p>hex - #418433 </p>
           <p>rgb - RGB (65, 132, 51)</p>
         </div>
-        <div className="card" style={{ backgroundColor: '#bc3907', color: '#ffffff' }}>
+        <div className="card" style={{ backgroundColor: '#A01313', color: '#ffffff' }}>
           <h3>error message</h3>
-          <p>hex - #bc3907 </p>
+          <p>hex - #A01313 </p>
           <p>rgb - RGB (188, 57, 7)</p>
         </div>
         <div className="card" style={{ backgroundColor: '#f4f4f4', color: '#000000' }}>
