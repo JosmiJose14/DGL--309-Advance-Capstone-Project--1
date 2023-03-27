@@ -1,5 +1,12 @@
-import React from "react";
+import React , { useState, useEffect } from "react";
 export const Forms = () => {
+  const [module, setModule] = useState(null);
+
+  useEffect(() => {
+    import('/assets/environment-1a3ab62fa5e0.js')
+      .then((module) => setModule(module))
+      .catch((error) => console.error(error));
+  }, []);
   return (
     <div className="topPadding clsForms marginleft">
       <h2>Labels and textbox </h2>
