@@ -5,19 +5,23 @@
 //navigation implemented
 //https://www.geeksforgeeks.org/how-to-create-a-responsive-sidebar-with-dropdown-menu-in-reactjs/
 import "./App.css";
+import { Helmet } from 'react-helmet';
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route ,Navigate } from "react-router-dom";
 import { Typography, Colors,Images } from "./pages/StyleElements";
 import {Accordian, Carousels,Table,Card, ToolTip, Section} from "./pages/Components";
-
-import { Navigation, NavbarSubmenu,BreadCrumbs } from "./pages/Navigation";
+import { Navigation,BreadCrumbs } from "./pages/Navigation";
 import { Forms } from "./pages/Forms";
 import{ ButtonStyles }from "./pages/Button";
 import{ List }from "./pages/List";
 import Footer from './components/Footer';
 function App() {
   return (
-    <Router>
+    <div>
+      <Helmet>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self';" />
+      </Helmet>
+      <Router>
       <Sidebar />
       <Routes>
 
@@ -41,6 +45,8 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+    </div>
+   
     
   );
 }
