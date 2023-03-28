@@ -5,7 +5,6 @@
 //navigation implemented
 //https://www.geeksforgeeks.org/how-to-create-a-responsive-sidebar-with-dropdown-menu-in-reactjs/
 import "./App.css";
-import { Helmet } from 'react-helmet';
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route ,Navigate } from "react-router-dom";
 import { Typography, Colors,Images } from "./pages/StyleElements";
@@ -17,14 +16,9 @@ import{ List }from "./pages/List";
 import Footer from './components/Footer';
 function App() {
   return (
-    <div>
-      <Helmet>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self';" />
-      </Helmet>
       <Router>
       <Sidebar />
       <Routes>
-
         {/* reference -https://stackoverflow.com/questions/29552601/how-to-set-the-defaultroute-to-another-route-in-react-router/43958016#43958016 */}
         <Route path="/" element={<Navigate to="/style-elements/typography" />}></Route>
         <Route path='/style-elements/typography' element={<Typography/>} />
@@ -45,9 +39,6 @@ function App() {
       </Routes>
       <Footer />
     </Router>
-    </div>
-   
-    
   );
 }
    
