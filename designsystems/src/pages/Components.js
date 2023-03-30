@@ -489,7 +489,7 @@ export const Section = () => {
         </div>
       </div>
       <div className="flex-container">
-        <div className="card" style={{ height: '250px' }}>
+        <div className="card" style={{ height: '300px' }}>
           <div className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div className="expandHideCode" style={{ color: 'black' }} >html  <br></br><br></br>
@@ -516,7 +516,7 @@ export const Section = () => {
               </pre>
             }</div>
         </div>
-        <div className="card" style={{ height: '250px' }}>
+        <div className="card" style={{ height: '300px' }}>
           <div className="card-text"> {
            /*https://blog.logrocket.com/create-collapsible-react-components-react-collapsed/ */}
             <div className="expandHideCode" style={{ color: 'black' }}>css

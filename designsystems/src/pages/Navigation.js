@@ -240,26 +240,26 @@ export const NavbarSubmenu = () => {
             className="navigation-menu">
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="/Home">Home</a>
               </li>
               <li>
-                <a onClick={handleToggle}>About</a>
+                <a onClick={handleToggle} href="/About">About</a>
                 {isOpen && (
                   <ul className="submenu">
                     <li>
-                      <a href="#">About 1</a>
+                      <a href="/About">About 1</a>
                     </li>
                     <li>
-                      <a href="#">About 2</a>
+                      <a href="/About">About 2</a>
                     </li>
                     <li>
-                      <a href="#">About 3</a>
+                      <a href="/About">About 3</a>
                     </li>
                   </ul>
                 )}
               </li>
               <li>
-                <a href="">Contact</a>
+                <a href="/Forms">Contact</a>
               </li>
             </ul>
           </div>
