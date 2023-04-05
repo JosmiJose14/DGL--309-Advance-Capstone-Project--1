@@ -1,6 +1,5 @@
 //Setup react js in visual studio code
-//https://www.geeksforgeeks.org/how-to-create-a-responsive-sidebar-with-dropdown-menu-in-reactjs/
-
+//https://devdotcode.com/5-steps-to-set-up-react-development-environment/
 
 //navigation implemented
 //https://www.geeksforgeeks.org/how-to-create-a-responsive-sidebar-with-dropdown-menu-in-reactjs/
